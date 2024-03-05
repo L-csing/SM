@@ -1,0 +1,6 @@
+# NAME: Mail
+DOMAIN,imap-mail.outlook.com
+DOMAIN,outlook.office365.com
+DOMAIN,smtp-mail.outlook.com
+DOMAIN,smtp.office365.com
+DOMAIN-SUFFIX,m.hotmail.com
