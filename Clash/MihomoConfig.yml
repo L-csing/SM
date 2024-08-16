@@ -9,7 +9,7 @@ tcp-concurrent: true
 # 允许局域网的连接（可用来共享代理）
 allow-lan: true
 # 开启 IPv6 总开关，关闭阻断所有 IPv6 链接和屏蔽 DNS 请求 AAAA 记录  
-ipv6: false
+ipv6: true
 # 规则模式：rule/global/direct/script
 mode: rule
 # 设置日志输出级别: silent/error/warning/info/debug
@@ -57,7 +57,7 @@ tun:
 dns:
   enable: true
   # IPV6解析开关；如果为false，将返回ipv6结果为空
-  ipv6: false
+  ipv6: true
   # DNS处理模式，可选值 normal/fake-ip/redir-host
   enhanced-mode: fake-ip
   # DNS监听地址
