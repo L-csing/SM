@@ -1,7 +1,5 @@
 # 以 '#' 或 '//' 开头的配置文件行为注释行
 
-# ================
-
 # 混合端口 HTTP和SOCKS5用一个端口
 mixed-port: 7890
 # TCP 并发连接所有 IP, 将使用最快握手的 TCP
@@ -71,8 +69,3 @@ dns:
   default-nameserver: [223.5.5.5, 119.29.29.29]
   # 默认的域名解析服务器
   nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
-  # 指定域名查询的解析服务器，可使用 geosite, 优先于 nameserver/fallback 查询
-  nameserver-policy:
-    'geosite:cn': system
-    'geosite:gfw,geolocation-!cn': [quic://223.5.5.5, quic://223.6.6.6, https://1.12.12.12/dns-query, https://120.53.53.53/dns-query]
-        
