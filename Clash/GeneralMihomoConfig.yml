@@ -14,9 +14,6 @@ external-controller: 127.0.0.1:9090
 external-ui: ui
 external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
 
-
-secret: "52pG1314"
-
 geodata-mode: true
 geo-auto-update: true
 geo-update-interval: 24
@@ -32,6 +29,10 @@ profile:
 
 sniffer:
   enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: true
+  
   sniff:
     HTTP:
       ports: [80, 8080-8880]
