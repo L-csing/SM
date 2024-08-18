@@ -10,9 +10,8 @@ global-client-fingerprint: chrome
 find-process-mode: strict
 external-controller: 127.0.0.1:9090
 external-ui: ui
-external-ui-name: L.cs
 external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
-secret: "52pG1314"
+secret: "1234"
 
 geodata-mode: true
 geox-url:
