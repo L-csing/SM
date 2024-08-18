@@ -3,7 +3,9 @@
 mixed-port: 7890
 tcp-concurrent: true
 allow-lan: false
-ipv6: false
+ipv6: true
+udp: true
+mode: rule
 log-level: info
 unified-delay: true
 global-client-fingerprint: chrome
@@ -16,6 +18,8 @@ external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-
 secret: "52pG1314"
 
 geodata-mode: true
+geo-auto-update: true
+geo-update-interval: 24
 geox-url:
   geoip: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat"
   geosite: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
@@ -23,8 +27,8 @@ geox-url:
   asn: "https://mirror.ghproxy.com/https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb"
 
 profile:
-  store-selected: true 
-  store-fake-ip: true  
+  store-selected: true
+  store-fake-ip: true
 
 sniffer:
   enable: true
@@ -41,11 +45,13 @@ tun:
   enable: true
   stack: mixed
   dns-hijack: [any:53]
-
+  auto-route: true
+  auto-detect-interface: true
+  
 dns:
   enable: true
   prefer-h3: true
-  ipv6: false
+  ipv6: true
   enhanced-mode: fake-ip
   listen: :1053
   fake-ip-range: 198.18.0.1/16
