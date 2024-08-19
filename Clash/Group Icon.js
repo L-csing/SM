@@ -1,10 +1,8 @@
-// 策略组通用配置
 const groupBaseOption = {
   "interval": 300,
   "url": "http://www.gstatic.com/generate_204",
 };
 
-// 程序入口
 function main(config) {
   const proxyCount = config?.proxies?.length ?? 0;
   const proxyProviderCount =
@@ -13,7 +11,6 @@ function main(config) {
     throw new Error("配置文件中未找到任何代理");
   }
 
-  // 覆盖策略组
   config["proxy-groups"] = [
     {
       ...groupBaseOption,
@@ -95,7 +92,6 @@ function main(config) {
       "icon": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png"
     },
    
-    // 地区分组
     {
       ...groupBaseOption,
       "name": "香港节点",
