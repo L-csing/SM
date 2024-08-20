@@ -1,6 +1,28 @@
-
+# 一个订阅一个配置
 proxy-providers:
   Subscribe: {url: http://your-service-provider, path: ./proxy-providers/Sub.yaml, type: http, interval: 86400, health-check: {enable: true, url: http://latency-test.skk.moe/endpoint, interval: 1800}}
+  # 在此将"http://your-service-provider"替换为你的机场订阅，推荐使用 base64 或者 node list
+  # Sub-Store生成的链接,可以直接替换上述 url 引号中的部分,具体见 Sub-Store 教程
+
+# 多个订阅一个配置
+p: &p
+  type: http
+  interval: 86400
+  health-check:
+    enable: true
+    url: http://latency-test.skk.moe/endpoint
+    interval: 1800
+
+proxy-providers:
+  provider1:
+    <<: *p
+    url: "http://your-service-provider"
+    path: ./proxy_providers/provider1.yaml
+
+  provider2:
+    <<: *p
+    type: file
+    path: ./proxy_providers/provider2.yaml
   # 在此将"http://your-service-provider"替换为你的机场订阅，推荐使用 base64 或者 node list
   # Sub-Store生成的链接,可以直接替换上述 url 引号中的部分,具体见 Sub-Store 教程         
 
