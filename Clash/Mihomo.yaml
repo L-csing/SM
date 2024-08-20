@@ -1,0 +1,121 @@
+
+proxy-providers:
+  Subscribe: {url: http://your-service-provider, path: ./proxy-providers/Sub.yaml, type: http, interval: 86400, health-check: {enable: true, url: http://latency-test.skk.moe/endpoint, interval: 1800}}
+  # 在此将"http://your-service-provider"替换为你的机场订阅，推荐使用 base64 或者 node list
+  # Sub-Store生成的链接,可以直接替换上述 url 引号中的部分,具体见 Sub-Store 教程         
+
+mixed-port: 7893
+tcp-concurrent: true
+allow-lan: false
+ipv6: false
+udp: true
+mode: rule
+log-level: info
+unified-delay: true
+global-client-fingerprint: chrome
+find-process-mode: strict
+external-controller: 127.0.0.1:9090
+external-ui: ui
+external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
+
+geodata-mode: true
+geo-auto-update: true
+geo-update-interval: 24
+geox-url:
+  geoip: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat"
+  geosite: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+  mmdb: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country-lite.mmdb"
+  asn: "https://mirror.ghproxy.com/https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb"
+
+profile:
+  store-selected: true 
+  store-fake-ip: true  
+
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: true
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+    TLS:
+      ports: [443, 8443]
+    QUIC:
+      ports: [443, 8443]
+
+tun:
+  enable: true
+  stack: mixed
+  dns-hijack: [any:53]
+  auto-route: true
+  auto-detect-interface: true
+        
+dns:
+  enable: true
+  prefer-h3: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  listen: :1053
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter: ['+.lan', '*', '+.local']
+  default-nameserver: [223.5.5.5, 119.29.29.29, system]
+  nameserver: [223.5.5.5, 119.29.29.29]
+  nameserver-policy:
+    'geosite:cn': system
+    'geosite:gfw,geolocation-!cn': [quic://223.5.5.5, quic://223.6.6.6, https://1.12.12.12/dns-query, https://120.53.53.53/dns-query]
+
+# 锚点参数
+pg: &pg {type: select, proxies: [香港节点, 台湾节点, 日本节点, 狮城节点, 美国节点, 特殊节点, DIRECT]}
+url-test: &url-test {type: url-test, url: http://latency-test.skk.moe/endpoint, interval: 300, tolerance: 0, include-all: true}
+select: &select {type: select, include-all: true}
+fallback: &fallback {type: fallback, url: http://latency-test.skk.moe/endpoint, interval: 300, include-all: true}
+load-balance: &load-balance {type: load-balance, strategy: consistent-hashing, url: http://latency-test.skk.moe/endpoint, interval: 300, include-all: true}
+c: &c {type: http, behavior: classical, format: text, interval: 86400}
+
+proxy-groups:
+
+  - {name: 全球加速, <<: *pg, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png}
+  - {name: 电报代理, <<: *pg, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png}
+  - {name: 影视服务, <<: *pg, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Emby.png}
+  - {name: 国际媒体, <<: *pg, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Streaming.png}
+  - {name: 谷歌服务, <<: *pg, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png}
+  - {name: 微软服务, <<: *pg, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Microsoft.png}
+  - {name: 苹果服务, <<: *pg, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png}
+  - {name: 港台番剧, type: select, proxies: [香港节点, 台湾节点, DIRECT], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/StreamingSE.png}
+  - {name: 广告拦截, type: select, proxies: [REJECT, DIRECT], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Adblock.png}
+  - {name: 黑白名单, <<: *pg, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png}
+  - {name: 香港节点, <<: *url-test, filter: "(?i)🇭🇰|香港|(\b(HK|Hong)\b)", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png}
+  - {name: 台湾节点, <<: *url-test, filter: "(?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png}
+  - {name: 日本节点, <<: *url-test, filter: "(?i)🇯🇵|日本|东京|(\b(JP|Japan)\b)", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png}
+  - {name: 狮城节点, <<: *url-test, filter: "(?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png}
+  - {name: 美国节点, <<: *url-test, filter: "(?i)🇺🇸|美国|洛杉矶|圣何塞|(\b(US|United States)\b)", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png}
+  - {name: 特殊节点, <<: *url-test, exclude-filter: "港|台|狮|本|新|美|距离|到期|重置|剩余|Traffic|Reset|Expire|Date|GB|HK|TW|JP|SG|US|Hong|Taiwan|Japan|Singapore|States", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/XD.png}
+
+rule-providers:
+  AD: {<<: *c, path: ./rule-providers/AD.list, url: https://raw.githubusercontent.com/L-csing/SM/main/Clash/Rules/Reject.list}
+  Telegram: {<<: *c, path: ./rule-providers/Telegram.list, url: https://raw.githubusercontent.com/L-csing/SM/main/Clash/Rules/Telegram.list}
+  Emby: {<<: *c, path: ./rule-providers/Emby.list, url: https://raw.githubusercontent.com/L-csing/SM/main/Clash/Rules/Emby.list}
+  Media: {<<: *c, path: ./rule-providers/Media.list, url: https://raw.githubusercontent.com/L-csing/SM/main/Clash/Rules/Media.list}
+  Google: {<<: *c, path: ./rule-providers/Google.list, url: https://raw.githubusercontent.com/L-csing/SM/main/Clash/Rules/Google.list}
+  Apple: {<<: *c, path: ./rule-providers/Apple.list, url: https://raw.githubusercontent.com/L-csing/SM/main/Clash/Rules/Apple.list}
+  Gtfj: {<<: *c, path: ./rule-providers/Gtfj.list, url: https://raw.githubusercontent.com/L-csing/SM/main/Clash/Rules/Gtfj.list}
+  China: {<<: *c, path: ./rule-providers/China.list, url: https://raw.githubusercontent.com/L-csing/SM/main/Clash/Rules/ChinaDomain.list}
+  
+rules:
+  - RULE-SET,AD,广告拦截
+  - RULE-SET,Telegram,电报代理
+  - RULE-SET,Media,国际媒体  
+  - RULE-SET,Google,谷歌服务
+  - RULE-SET,Emby,影视服务
+  - RULE-SET,Gtfj,港台番剧
+  - RULE-SET,Apple,苹果服务 
+  - GEOSITE,onedrive,微软服务
+  - GEOSITE,github,微软服务
+  - GEOSITE,microsoft,微软服务
+  - GEOSITE,gfw,全球加速
+  - RULE-SET,China,DIRECT
+  - GEOIP,lan,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,黑白名单
