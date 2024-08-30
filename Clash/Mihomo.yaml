@@ -118,7 +118,7 @@ proxy-groups:
   - {name: 狮城节点, <<: *url-test, filter: "(?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png}
   - {name: 美国节点, <<: *url-test, filter: "(?i)🇺🇸|美国|洛杉矶|圣何塞|(\b(US|United States)\b)", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png}
   - {name: 特殊节点, <<: *url-test, exclude-filter: "港|台|狮|本|新|美|距离|到期|重置|剩余|Traffic|Reset|Expire|Date|GB|HK|TW|JP|SG|US|Hong|Taiwan|Japan|Singapore|States", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/XD.png}
-
+  - {name: GLOBAL, <<: *select, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png}
 rule-providers:
   AD: {<<: *c, path: ./rule-providers/AD.list, url: https://raw.githubusercontent.com/L-csing/SM/main/Clash/Rules/Reject.list}
   Telegram: {<<: *c, path: ./rule-providers/Telegram.list, url: https://raw.githubusercontent.com/L-csing/SM/main/Clash/Rules/Telegram.list}
