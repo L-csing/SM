@@ -116,21 +116,21 @@ function main(config) {
       "name": "影视服务",
       "type": "select",
       "proxies": ["香港节点", "台湾节点", "日本节点", "狮城节点", "美国节点", "特殊节点"],
-      "icon": "icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Emby.png"
+      "icon": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Emby.png"
     },
     {
       ...groupBaseOption,
       "name": "智能机器",
       "type": "select",
       "proxies": ["台湾节点", "日本节点", "狮城节点", "美国节点", "特殊节点"],
-      "icon": "icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Available.png"
+      "icon": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Available.png"
     },
     {
       ...groupBaseOption,
-      "name": " 国际媒体",
+      "name": "国际媒体",
       "type": "select",
       "proxies": ["香港节点", "台湾节点", "日本节点", "狮城节点", "美国节点", "特殊节点"],
-      "icon": "icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Streaming.png"
+      "icon": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Streaming.png"
     },
     {
       ...groupBaseOption,
