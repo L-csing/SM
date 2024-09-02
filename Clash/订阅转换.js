@@ -174,13 +174,6 @@ function main(config) {
       "proxies": ["香港节点", "台湾节点", "日本节点", "狮城节点", "美国节点", "特殊节点"],
       "icon": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png"
     },
-    {
-      ...groupBaseOption,
-      "name": "GLOBAL",
-      "type": "select",
-      "include-all": true,
-      "icon": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png"
-    },
 
     // 地区分组
     {
@@ -236,7 +229,14 @@ function main(config) {
       "include-all": true,
       "exclude-filter": "港|台|狮|本|新|美|距离|到期|重置|剩余|Traffic|Reset|Expire|Date|GB|HK|TW|JP|SG|US|Hong|Taiwan|Japan|Singapore|States",
       "icon": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/XD.png"
-    }  
+    }
+    {
+      ...groupBaseOption,
+      "name": "GLOBAL",
+      "type": "select",
+      "include-all": true,
+      "icon": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png"
+    }
   ];
 
   // 覆盖规则集
