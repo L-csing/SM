@@ -229,7 +229,7 @@ function main(config) {
       "include-all": true,
       "exclude-filter": "港|台|狮|本|新|美|距离|到期|重置|剩余|Traffic|Reset|Expire|Date|GB|HK|TW|JP|SG|US|Hong|Taiwan|Japan|Singapore|States",
       "icon": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/XD.png"
-    }
+    },
     {
       ...groupBaseOption,
       "name": "GLOBAL",
