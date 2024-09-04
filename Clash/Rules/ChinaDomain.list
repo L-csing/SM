@@ -1,8 +1,7 @@
-# This file contains known addresses that are avaliable in the Mainland China.
-
+#########################################
 DOMAIN,this_ruleset_is_made_by_sukkaw.ruleset.skk.moe
 DOMAIN,www.layuicdn.com
-DOMAIN,xboxlive.cn
+DOMAIN,gstore.val.manlaxy.com
 DOMAIN,lv.queniujq.cn
 DOMAIN,cn.download.nvidia.com
 DOMAIN,www.intel.cn
@@ -157,7 +156,6 @@ DOMAIN-SUFFIX,haowu.link
 DOMAIN-SUFFIX,laiqukankan.com
 DOMAIN-SUFFIX,zhuanzfx.com
 DOMAIN-SUFFIX,321fenx.com
-DOMAIN-SUFFIX,laiqukankan.com
 DOMAIN-SUFFIX,youdao.com
 DOMAIN-SUFFIX,sina.cn
 DOMAIN-SUFFIX,sina.com
@@ -311,12 +309,14 @@ DOMAIN-SUFFIX,bendibao.com
 DOMAIN-SUFFIX,benghuai.com
 DOMAIN-SUFFIX,bh3.com
 DOMAIN-SUFFIX,bosszhipin.com
+DOMAIN-SUFFIX,c-t.work
 DOMAIN-SUFFIX,cailianpress.com
 DOMAIN-SUFFIX,cls.cn
 DOMAIN-SUFFIX,camera360.com
 DOMAIN-SUFFIX,camscanner.com
 DOMAIN-SUFFIX,cdnjtzy.com
 DOMAIN-SUFFIX,cowcs.com
+DOMAIN-SUFFIX,cowtransfer.com
 DOMAIN-SUFFIX,changyan.com
 DOMAIN-SUFFIX,chaoxing.cc
 DOMAIN-SUFFIX,chaoxing.com
@@ -339,6 +339,7 @@ DOMAIN-SUFFIX,csdnimg.cn
 DOMAIN-SUFFIX,ctfile.com
 DOMAIN-SUFFIX,ctrip.com
 DOMAIN-SUFFIX,c-ctrip.com
+DOMAIN-SUFFIX,dancf.com
 DOMAIN-SUFFIX,dangdang.com
 DOMAIN-SUFFIX,dewu.com
 DOMAIN-SUFFIX,dfcfw.com
@@ -389,6 +390,7 @@ DOMAIN-SUFFIX,infinitynewtab.com
 DOMAIN-SUFFIX,ithome.com
 DOMAIN-SUFFIX,jianshu.com
 DOMAIN-SUFFIX,jianshu.io
+DOMAIN-SUFFIX,jiemian.com
 DOMAIN-SUFFIX,jiguang.cn
 DOMAIN-SUFFIX,jb51.net
 DOMAIN-SUFFIX,jpush.cn
@@ -483,6 +485,7 @@ DOMAIN-SUFFIX,tianyancha.com
 DOMAIN-SUFFIX,tripcdn.cn
 DOMAIN-SUFFIX,tvmao.com
 DOMAIN-SUFFIX,tvzhe.com
+DOMAIN-SUFFIX,udesk.cn
 DOMAIN-SUFFIX,upyun.com
 DOMAIN-SUFFIX,vip.com
 DOMAIN-SUFFIX,weather.com.cn
@@ -505,6 +508,7 @@ DOMAIN-SUFFIX,ys7.com
 DOMAIN-SUFFIX,yuanshen.com
 DOMAIN-SUFFIX,yuewen.com
 DOMAIN-SUFFIX,yumchina.com
+DOMAIN-SUFFIX,yupoo.com
 DOMAIN-SUFFIX,yy.com
 DOMAIN-SUFFIX,zdmimg.com
 DOMAIN-SUFFIX,zdic.net
