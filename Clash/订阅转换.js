@@ -310,7 +310,6 @@ function main(config) {
     "GEOSITE,microsoft,微软服务",
     "GEOSITE,gfw,全球加速",
     "RULE-SET,China,DIRECT",
-    "GEOIP,LAN,DIRECT",
     "GEOIP,CN,DIRECT",
     "MATCH,黑白名单"
   ];
