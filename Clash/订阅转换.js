@@ -45,7 +45,7 @@ function main(config) {
     "enhanced-mode": "fake-ip",
     "fake-ip-range": "198.18.0.1/16",
     "fake-ip-filter": ["*", "+.lan", "+.local", "+.direct", "+.msftconnecttest.com", "+.msftncsi.com"],
-    "default-nameserver": ["system"],
+    "default-nameserver": ["223.5.5.5", "119.29.29.29"],
     "nameserver": ["223.5.5.5", "119.29.29.29", "180.184.1.1"],
     "nameserver-policy": {
       "geosite:cn": "system",
@@ -56,7 +56,7 @@ function main(config) {
   // 覆盖 geodata 配置
   config["geodata-mode"] = true;
   config["geo-auto-update"] = true;
-  config["geo-update-interval"] = "24";
+  config["geo-update-interval"] = 48;
   config["geox-url"] = {
     "geoip": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat",
     "geosite": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat",
@@ -310,7 +310,7 @@ function main(config) {
     "GEOSITE,microsoft,微软服务",
     "GEOSITE,gfw,全球加速",
     "RULE-SET,China,DIRECT",
-    "GEOIP,lan,DIRECT",
+    "GEOIP,LAN,DIRECT",
     "GEOIP,CN,DIRECT",
     "MATCH,黑白名单"
   ];
