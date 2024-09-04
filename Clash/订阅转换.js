@@ -44,9 +44,9 @@ function main(config) {
     "ipv6": false,
     "enhanced-mode": "fake-ip",
     "fake-ip-range": "198.18.0.1/16",
-    "fake-ip-filter": ["*", "+.lan", "+.local", "+.direct"],
-    "default-nameserver": ["223.5.5.5", "119.29.29.29", "system"],
-    "nameserver": ["223.5.5.5", "119.29.29.29"],
+    "fake-ip-filter": ["*", "+.lan", "+.local", "+.direct", "+.msftconnecttest.com", "+.msftncsi.com"],
+    "default-nameserver": ["system"],
+    "nameserver": ["223.5.5.5", "119.29.29.29", "180.184.1.1"],
     "nameserver-policy": {
       "geosite:cn": "system",
       "geosite:gfw,geolocation-!cn": ["quic://223.5.5.5", "quic://223.6.6.6", "https://1.12.12.12/dns-query", "https://120.53.53.53/dns-query"]
@@ -118,7 +118,7 @@ function main(config) {
     },
     {
       ...groupBaseOption,
-      "name": "智能机器",
+      "name": "人工智能",
       "type": "select",
       "proxies": ["台湾节点", "日本节点", "狮城节点", "美国节点", "特殊节点"],
       "icon": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Available.png"
@@ -302,7 +302,7 @@ function main(config) {
     "RULE-SET,Media,国际媒体 ", 
     "RULE-SET,Google,谷歌服务",
     "RULE-SET,Emby,影视服务",
-    "RULE-SET,OpenAI,智能机器",
+    "RULE-SET,OpenAI,人工智能",
     "RULE-SET,Gtfj,港台番剧",
     "RULE-SET,Apple,苹果服务", 
     "GEOSITE,onedrive,微软服务",
