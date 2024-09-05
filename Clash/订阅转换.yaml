@@ -69,10 +69,10 @@ load-balance: &load-balance {type: load-balance, strategy: consistent-hashing, u
 c: &c {type: http, behavior: classical, format: text, interval: 86400}
 
 proxy-groups:
-
   - {name: 全球加速, <<: *pg, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png}
   - {name: 电报代理, <<: *pg, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png}
   - {name: 影视服务, <<: *pg, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Emby.png}
+  - {name: 人工智能, <<: *pg, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Available.png}
   - {name: 国际媒体, <<: *pg, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Streaming.png}
   - {name: 谷歌服务, <<: *pg, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png}
   - {name: 微软服务, <<: *pg, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Microsoft.png}
@@ -87,10 +87,12 @@ proxy-groups:
   - {name: 美国节点, <<: *url-test, filter: "(?i)🇺🇸|美国|洛杉矶|圣何塞|(\b(US|United States)\b)", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png}
   - {name: 特殊节点, <<: *url-test, exclude-filter: "港|台|狮|本|新|美|距离|到期|重置|剩余|Traffic|Reset|Expire|Date|GB|HK|TW|JP|SG|US|Hong|Taiwan|Japan|Singapore|States", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/XD.png}
   - {name: GLOBAL, <<: *select, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png}
+
 rule-providers:
   AD: {<<: *c, path: ./rule-providers/AD.list, url: https://raw.githubusercontent.com/L-csing/SM/main/Clash/Rules/Reject.list}
   Telegram: {<<: *c, path: ./rule-providers/Telegram.list, url: https://raw.githubusercontent.com/L-csing/SM/main/Clash/Rules/Telegram.list}
   Emby: {<<: *c, path: ./rule-providers/Emby.list, url: https://raw.githubusercontent.com/L-csing/SM/main/Clash/Rules/Emby.list}
+  OpenAI: {<<: *c, path: ./rule-providers/OpenAI.list, url: https://raw.githubusercontent.com/L-csing/SM/main/Clash/Rules/OpenAI.list}
   Media: {<<: *c, path: ./rule-providers/Media.list, url: https://raw.githubusercontent.com/L-csing/SM/main/Clash/Rules/Media.list}
   Google: {<<: *c, path: ./rule-providers/Google.list, url: https://raw.githubusercontent.com/L-csing/SM/main/Clash/Rules/Google.list}
   Apple: {<<: *c, path: ./rule-providers/Apple.list, url: https://raw.githubusercontent.com/L-csing/SM/main/Clash/Rules/Apple.list}
@@ -103,6 +105,7 @@ rules:
   - RULE-SET,Media,国际媒体  
   - RULE-SET,Google,谷歌服务
   - RULE-SET,Emby,影视服务
+  - RULE-SET,OpenAI,人工智能  
   - RULE-SET,Gtfj,港台番剧
   - RULE-SET,Apple,苹果服务 
   - GEOSITE,onedrive,微软服务
@@ -110,6 +113,5 @@ rules:
   - GEOSITE,microsoft,微软服务
   - GEOSITE,gfw,全球加速
   - RULE-SET,China,DIRECT
-  - GEOIP,lan,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,黑白名单
