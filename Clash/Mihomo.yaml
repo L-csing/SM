@@ -28,7 +28,18 @@ proxy-providers:
     type: file
     path: ./proxy_providers/provider2.yaml
   # 在此将"http://your-service-provider"替换为你的机场订阅，推荐使用 base64 或者 node list
-  # Sub-Store生成的链接,可以直接替换上述 url 引号中的部分,具体见 Sub-Store 教程         
+  # Sub-Store生成的链接,可以直接替换上述 url 引号中的部分,具体见 Sub-Store 教程
+
+# 多个订阅一个配置其他写法
+p: &p {type: http, interval: 86400, health-check: {enable: true, url: http://connectivitycheck.gstatic.com/generate_204, interval: 1800, timeout: 5000}}
+proxy-providers:
+  Subscribe: # 在此将 "http://your-service-provider" 替换为你的机场订阅，推荐使用 base64 或者 node list
+    url: http://your-service-provider
+    <<: *p
+    #override: # 修改节点前后缀时，需移除前方的 "#" 符号
+      #additional-prefix: "节点前缀"
+      #additional-suffix: "节点后缀"
+  #Subscribe2: {url: http://your-service-provider, <<: *p}
 
 mixed-port: 7893
 tcp-concurrent: true
