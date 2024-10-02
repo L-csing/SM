@@ -1,2 +1,2 @@
 {"name":"TKV","icons":[{"name":"TKV(1).png","url":"https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/TKV(1).png"},
-{"name":"SsrDog","icons":[{"name":"ssrdog.png","url":"https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ssrdog.png"}
+{"name":"SsrDog","icons":[{"name":"ssrdog.png","url":"https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ssrdog.png"}]
