@@ -1,1 +1,10 @@
-{"name":"Icon","icons":[{"name":"TKV(1).png","url":"https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/TKV(1).png"},{"name":"ssrdog.png","url":"https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ssrdog.png"},{"name":"EF.png","url":"https://raw.githubusercontent.com/black2c7/TheMagic-Icons/main/Icons/EF.png"},{"name":"aca.png","url":"https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/aca.png"},{"name":"CTC.png","url":"https://raw.githubusercontent.com/black2c7/TheMagic-Icons/main/Icons/CTC.png"}]
+{
+    "name": "Icon",
+    "icons": [
+        {"name": "TKV(1).png", "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/TKV(1).png"},
+        {"name": "ssrdog.png", "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ssrdog.png"},
+        {"name": "EF.png", "url": "https://raw.githubusercontent.com/black2c7/TheMagic-Icons/main/Icons/EF.png"},
+        {"name": "aca.png", "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/aca.png"},
+        {"name": "CTC.png", "url": "https://raw.githubusercontent.com/black2c7/TheMagic-Icons/main/Icons/CTC.png"}
+    ]
+}
