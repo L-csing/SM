@@ -8,9 +8,6 @@ log-level: info
 unified-delay: true
 global-client-fingerprint: chrome
 find-process-mode: strict
-external-controller: 127.0.0.1:9090
-external-ui: ui
-external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
 
 geodata-mode: true
 geo-auto-update: true
