@@ -151,7 +151,7 @@ function operator(pro) {
 
   inputList.forEach((arr) => {
     arr.forEach((value, valueIndex) => {
-      Allmap[value] = outList[valueIndex]+" | ";
+      Allmap[value] = outList[valueIndex] + " | ";
     });
   });
 
