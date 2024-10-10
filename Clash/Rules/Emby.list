@@ -244,10 +244,12 @@ DOMAIN-SUFFIX,emby77.org
 DOMAIN-SUFFIX,pilipiliultra.top
 DOMAIN-SUFFIX,pilipiliultra.com
 DOMAIN-SUFFIX,pilipili.club
+DOMAIN-SUFFIX,anime.fmta.boo
 
 # PornEmby
 DOMAIN-SUFFIX,pornemby.club
 DOMAIN-SUFFIX,ii00.cc
+DOMAIN-SUFFIX,restrict.fmta.boo
 
 # PornEmby(网抑云)
 DOMAIN,195.201.86.86
@@ -396,6 +398,7 @@ DOMAIN-SUFFIX,zi0.icu
 
 ##### 未分类 #####
 
+DOMAIN-SUFFIX,oversea.alphatvapp.top
 DOMAIN-SUFFIX,emby.ws
 DOMAIN-SUFFIX,emby.cl
 DOMAIN-SUFFIX,emby.kim
