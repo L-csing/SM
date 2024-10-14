@@ -186,9 +186,10 @@ DOMAIN-SUFFIX,emby.mdss.cloud
 
 # ntRRR
 DOMAIN-SUFFIX,clip.makima.online
+DOMAIN-SUFFIX,clip.synn.cc
 DOMAIN-SUFFIX,ntrrr.am.sb
 DOMAIN-SUFFIX,stream.ntrrr.top
-DOMAIN-SUFFIX,clip.synn.cc
+
 
 # Nexitally
 DOMAIN-SUFFIX,emby.nexitally.com
@@ -240,17 +241,19 @@ DOMAIN-SUFFIX,ouonet.org
 ##### P #####
 
 # PiliPili
+DOMAIN-SUFFIX,anime.fmta.boo
 DOMAIN-SUFFIX,emby77.cf
 DOMAIN-SUFFIX,emby77.org
 DOMAIN-SUFFIX,pilipiliultra.top
 DOMAIN-SUFFIX,pilipiliultra.com
 DOMAIN-SUFFIX,pilipili.club
-DOMAIN-SUFFIX,anime.fmta.boo
+
 
 # PornEmby
+DOMAIN-SUFFIX,restrict.fmta.boo
 DOMAIN-SUFFIX,pornemby.club
 DOMAIN-SUFFIX,ii00.cc
-DOMAIN-SUFFIX,restrict.fmta.boo
+
 
 # PornEmby(网抑云)
 DOMAIN,195.201.86.86
@@ -399,6 +402,7 @@ DOMAIN-SUFFIX,zi0.icu
 
 ##### 未分类 #####
 
+DOMAIN-SUFFIX,cinema.fmta.boo
 DOMAIN-SUFFIX,oversea.alphatvapp.top
 DOMAIN-SUFFIX,emby.ws
 DOMAIN-SUFFIX,emby.cl
