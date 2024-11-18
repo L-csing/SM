@@ -77,7 +77,7 @@ proxy-groups:
   - {name: 广告拦截, type: select, proxies: [REJECT, DIRECT], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Adblock.png}
   - {name: 黑白名单, <<: *pg, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png}
   - {name: 香港节点, <<: *url-test, filter: "(?i)🇭🇰|香港|(\b(HK|Hong)\b)", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png}
-  - {name: 台湾节点, <<: *url-test, filter: "(?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png}
+  - {name: 日本节点, <<: *url-test, filter: "(?i)🇯🇵|日本|东京|(\b(JP|Japan)\b)", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png}
   - {name: 狮城节点, <<: *url-test, filter: "(?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png}
   - {name: GLOBAL, <<: *select, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png}
 
