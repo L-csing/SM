@@ -1,6 +1,7 @@
 DOMAIN,vsmarketplacebadge.apphb.com
 DOMAIN,edge.activity.windows.com
 DOMAIN,edge.microsoft.com
+DOMAIN,a.nel.cloudflare.com
 DOMAIN,iecvlist.microsoft.com
 DOMAIN,msedge.api.cdp.microsoft.com
 DOMAIN-SUFFIX,storage.live.com
