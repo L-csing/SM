@@ -403,6 +403,10 @@ DOMAIN-SUFFIX,zi0.icu
 
 ##### 未分类 #####
 
+DOMAIN-SUFFIX,emby.pppp.us.kg
+DOMAIN-SUFFIX,wmxz.567996.xyz
+DOMAIN-SUFFIX,cavps.eu.org
+DOMAIN-SUFFIX,embymv.link
 DOMAIN-SUFFIX,temby856.285286.xyz
 DOMAIN-SUFFIX,cinema.makima.online
 DOMAIN-SUFFIX,theater.makima.online
@@ -431,3 +435,6 @@ DOMAIN-SUFFIX,dicarerhome.com
 DOMAIN-SUFFIX,lucasmedia.top
 DOMAIN-SUFFIX,9191001.xyz
 IP-CIDR,188.172.228.49/32,no-resolve
+IP-CIDR,46.3.101.30/32,no-resolve
+IP-CIDR,154.29.145.151/32,no-resolve
+IP-CIDR,50.114.55.29/32,no-resolve
