@@ -106,7 +106,9 @@ DOMAIN-SUFFIX,emby.loan
 DOMAIN-SUFFIX,emby.trade
 
 # HKA(私服自建)
-DOMAIN-SUFFIX,252798.xyz
+DOMAIN-SUFFIX,hka-emby.aliz.work
+DOMAIN-SUFFIX,hka-emby1.aliz.work
+DOMAIN-SUFFIX,hka-emby2.aliz.work
 
 ##### I #####
 
