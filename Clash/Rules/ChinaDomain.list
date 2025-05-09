@@ -781,6 +781,9 @@ DOMAIN-SUFFIX,zjcdn.com
 DOMAIN-SUFFIX,zui.com
 DOMAIN-SUFFIX,zuimeitianqi.com
 DOMAIN-SUFFIX,zuoyebang.com
+DOMAIN-SUFFIX,a.204cloud.com
+DOMAIN-SUFFIX,emby.meowfly.net
+IP-CIDR,43.139.188.149/32,no-resolve
 DOMAIN-WILDCARD,*.ffzy-online?.com
 DOMAIN-WILDCARD,*.ffzy-play?.com
 DOMAIN-WILDCARD,*.lz-cdn?.com
