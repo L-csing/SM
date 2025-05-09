@@ -783,6 +783,12 @@ DOMAIN-SUFFIX,zuimeitianqi.com
 DOMAIN-SUFFIX,zuoyebang.com
 DOMAIN-SUFFIX,a.204cloud.com
 DOMAIN-SUFFIX,meowfly.net
+DOMAIN-SUFFIX,cinema.makima.online
+DOMAIN-SUFFIX,theater.makima.online
+DOMAIN-SUFFIX,anime.makima.online
+DOMAIN-SUFFIX,celluloid.makima.online
+DOMAIN-SUFFIX,restrict.makima.online
+DOMAIN-SUFFIX,clip.makima.online
 IP-CIDR,43.139.188.149/32,no-resolve
 DOMAIN-WILDCARD,*.ffzy-online?.com
 DOMAIN-WILDCARD,*.ffzy-play?.com
