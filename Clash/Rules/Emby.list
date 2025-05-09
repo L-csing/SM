@@ -98,6 +98,16 @@ DOMAIN-SUFFIX,91bp.dpdns.org
 DOMAIN-SUFFIX,dpdns.org
 DOMAIN-SUFFIX,eu.org
 
+# 机场服
+DOMAIN-SUFFIX,stream.synn.cc
+DOMAIN-SUFFIX,cinema.313445.xyz
+DOMAIN-SUFFIX,theater.313445.xyz
+DOMAIN-SUFFIX,anime.313445.xyz
+DOMAIN-SUFFIX,celluloid.313445.xyz
+DOMAIN-SUFFIX,restrict.313445.xyz
+DOMAIN-SUFFIX,emby.69yun69.com
+DOMAIN-SUFFIX,e.degyax.one
+
 # IP-CIDR Rules
 IP-CIDR,185.148.13.104/32,no-resolve
 IP-CIDR,185.148.13.13/32,no-resolve
