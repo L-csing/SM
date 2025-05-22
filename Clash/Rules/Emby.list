@@ -112,6 +112,9 @@ DOMAIN-SUFFIX,restrict.313445.xyz
 DOMAIN-SUFFIX,emby.69yun69.com
 DOMAIN-SUFFIX,e.degyax.one
 
+# FeiNiu
+DOMAIN-SUFFIX,feiniu.lol
+
 # IP-CIDR Rules
 IP-CIDR,185.148.13.104/32,no-resolve
 IP-CIDR,185.148.13.13/32,no-resolve
