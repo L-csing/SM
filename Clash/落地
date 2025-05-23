@@ -1,17 +1,17 @@
 proxies:
   - name: CNF | HK
     type: ss
-    server: cnfaster.lcsing.top
-    port: 22161
+    server: 
+    port: 
     cipher: aes-256-gcm
-    password: ViSdvn738foYS7QPWEta6+MjD+sefi5uzbtYHi4rME8=
+    password: 
     udp: true
     dialer-proxy: 机场选择
 
 proxy-providers:
   SYN:
     type: http
-    url: https://acl.syyn.pw/api/v1/client/subscribe?token=d6afc6dabf05ceaf4794b0097e0ad042
+    url: 
     path: ./providers/SYN.yaml
     interval: 3600
     vehicle-type: http
@@ -21,7 +21,7 @@ proxy-providers:
       interval: 300
   TKV:
     type: http
-    url: https://subs.ojbktv.com/subscribe/?sid=3322&uid=2470&token=d89de9e8e7e2790c56ce&app=clashverge
+    url: 
     path: ./providers/TKV.yaml
     interval: 3600
     vehicle-type: http
