@@ -1,0 +1,325 @@
+proxies:
+  - name: CNF | HK
+    type: ss
+    server: cnfaster.lcsing.top
+    port: 22161
+    cipher: aes-256-gcm
+    password: ViSdvn738foYS7QPWEta6+MjD+sefi5uzbtYHi4rME8=
+    udp: true
+    dialer-proxy: 机场选择
+
+proxy-providers:
+  SYN:
+    type: http
+    url: https://acl.syyn.pw/api/v1/client/subscribe?token=d6afc6dabf05ceaf4794b0097e0ad042
+    path: ./providers/SYN.yaml
+    interval: 3600
+    vehicle-type: http
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TKV:
+    type: http
+    url: https://subs.ojbktv.com/subscribe/?sid=3322&uid=2470&token=d89de9e8e7e2790c56ce&app=clashverge
+    path: ./providers/TKV.yaml
+    interval: 3600
+    vehicle-type: http
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+
+mixed-port: 7893
+tcp-concurrent: true
+allow-lan: false
+ipv6: false
+udp: true
+mode: rule
+log-level: info
+unified-delay: true
+global-client-fingerprint: chrome
+find-process-mode: strict
+geodata-mode: true
+geo-auto-update: true
+geo-update-interval: 48
+geox-url:
+  geoip: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat"
+  geosite: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+  mmdb: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country-lite.mmdb"
+  asn: "https://mirror.ghproxy.com/https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb"
+
+profile:
+  store-selected: true
+  store-fake-ip: true
+
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: true
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+    TLS:
+      ports: [443, 8443]
+    QUIC:
+      ports: [443, 8443]
+
+tun:
+  enable: true
+  stack: mixed
+  dns-hijack: [any:53]
+  auto-route: true
+  auto-detect-interface: true
+
+dns:
+  enable: true
+  prefer-h3: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  listen: :1053
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter: ['*', '+.lan', '+.local', '+.direct', '+.msftconnecttest.com', '+.msftncsi.com']
+  default-nameserver: [223.5.5.5, 119.29.29.29]
+  nameserver: [223.5.5.5, 119.29.29.29, 180.184.1.1]
+  nameserver-policy:
+    'geosite:cn': system
+    'geosite:gfw,geolocation-!cn': [quic://223.5.5.5, quic://223.6.6.6, https://1.12.12.12/dns-query, https://120.53.53.53/dns-query]
+
+proxy-groups:
+  - name: 机场选择
+    type: select
+    proxies:
+      - SYN
+      - TKV
+    icon: https://raw.githubusercontent.com/cc63/ICON/main/icons/Linkeless.png
+
+  - name: 落地选择
+    type: select
+    proxies:
+      - CNF | HK
+    icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/applesafari.png
+
+  - name: 全球加速
+    type: select
+    proxies:
+      - 落地选择
+      - 机场选择
+      - DIRECT
+      - CNF | HK
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
+
+  - name: 电报代理
+    type: select
+    proxies:
+      - 落地选择
+      - 机场选择
+      - DIRECT
+      - CNF | HK
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
+
+  - name: 海外抖音
+    type: select
+    proxies:
+      - 落地选择
+      - 机场选择
+      - DIRECT
+      - CNF | HK
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/TikTok.png
+
+  - name: 影视服务
+    type: select
+    proxies:
+      - 落地选择
+      - 机场选择
+      - DIRECT
+      - CNF | HK
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Emby.png
+
+  - name: 人工智能
+    type: select
+    proxies:
+      - 落地选择
+      - 机场选择
+      - DIRECT
+      - CNF | HK
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Available.png
+
+  - name: 国际媒体
+    type: select
+    proxies:
+      - 落地选择
+      - 机场选择
+      - DIRECT
+      - CNF | HK
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Streaming.png
+
+  - name: 谷歌服务
+    type: select
+    proxies:
+      - 落地选择
+      - 机场选择
+      - DIRECT
+      - CNF | HK
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png
+
+  - name: 微软服务
+    type: select
+    proxies:
+      - 落地选择
+      - 机场选择
+      - DIRECT
+      - CNF | HK
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Microsoft.png
+
+  - name: 苹果服务
+    type: select
+    proxies:
+      - 落地选择
+      - 机场选择
+      - DIRECT
+      - CNF | HK
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png
+
+  - name: 港台番剧
+    type: select
+    proxies:
+      - 落地选择
+      - 机场选择
+      - DIRECT
+      - CNF | HK
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/StreamingSE.png
+
+  - name: 广告拦截
+    type: select
+    proxies:
+      - DIRECT
+      - REJECT
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Adblock.png
+
+  - name: 黑白名单
+    type: select
+    proxies:
+      - 落地选择
+      - 机场选择
+      - DIRECT
+      - CNF | HK
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png
+
+  - name: SYN
+    type: select
+    use:
+      - SYN
+    icon: https://raw.githubusercontent.com/cc63/ICON/main/icons/SYN.png
+
+  - name: TKV
+    type: select
+    use:
+      - TKV
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/TKV(1).png
+
+  - name: GLOBAL
+    type: select
+    include-all: true
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png
+    
+rule-providers:
+  AD:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    path: /rule-providers/AD.list
+    url: https://raw.githubusercontent.com/L-csing/SM/main/Clash/Rules/Reject.list
+
+  Telegram:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./rule-providers/Telegram.list
+    url: https://raw.githubusercontent.com/L-csing/SM/main/Clash/Rules/Telegram.list
+
+  TikTok:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./rule-providers/TikTok.list
+    url: https://raw.githubusercontent.com/L-csing/SM/refs/heads/main/Clash/Rules/TikTok.list
+
+  Emby:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./rule-providers/Emby.list
+    url: https://raw.githubusercontent.com/L-csing/SM/main/Clash/Rules/Emby.list
+
+  OpenAI:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./rule-providers/OpenAI.list
+    url: https://raw.githubusercontent.com/L-csing/SM/main/Clash/Rules/OpenAI.list
+
+  Media:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./rule-providers/Media.list
+    url: https://raw.githubusercontent.com/L-csing/SM/main/Clash/Rules/Media.list
+
+  Google:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./rule-providers/Google.list
+    url: https://raw.githubusercontent.com/L-csing/SM/main/Clash/Rules/Google.list
+
+  Apple:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./rule-providers/Apple.list
+    url: https://raw.githubusercontent.com/L-csing/SM/main/Clash/Rules/Apple.list
+
+  Gtfj:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./rule-providers/Gtfj.list
+    url: https://raw.githubusercontent.com/L-csing/SM/main/Clash/Rules/Gtfj.list
+
+  China:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./rule-providers/China.list
+    url: https://raw.githubusercontent.com/L-csing/SM/main/Clash/Rules/ChinaDomain.list
+
+rules:
+  - RULE-SET,AD,广告拦截
+  - RULE-SET,Telegram,电报代理
+  - RULE-SET,TikTok,海外抖音
+  - RULE-SET,Media,国际媒体
+  - RULE-SET,Google,谷歌服务
+  - RULE-SET,Emby,影视服务
+  - RULE-SET,OpenAI,人工智能
+  - RULE-SET,Gtfj,港台番剧
+  - RULE-SET,Apple,苹果服务
+  - GEOSITE,onedrive,微软服务
+  - GEOSITE,github,微软服务
+  - GEOSITE,microsoft,微软服务
+  - GEOSITE,gfw,全球加速
+  - RULE-SET,China,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,黑白名单
