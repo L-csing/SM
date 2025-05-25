@@ -20,5 +20,11 @@ DOMAIN-SUFFIX,yt.be
 DOMAIN-SUFFIX,ytimg.com
 DOMAIN-KEYWORD,gmail
 DOMAIN-KEYWORD,google
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,github.io
+DOMAIN-SUFFIX,githubapp.com
+DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,githubusercontent.com
+DOMAIN-KEYWORD,github
 IP-CIDR,173.194.0.0/16,no-resolve
 IP-CIDR,74.125.0.0/16,no-resolve
