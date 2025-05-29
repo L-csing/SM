@@ -116,6 +116,9 @@ DOMAIN-SUFFIX,e.degyax.one
 # FeiNiu
 DOMAIN-SUFFIX,feiniu.lol
 
+# Douban
+DOMAIN-SUFFIX,onatoshi.114514.quest
+
 # IP-CIDR Rules
 IP-CIDR,185.148.13.104/32,no-resolve
 IP-CIDR,185.148.13.13/32,no-resolve
