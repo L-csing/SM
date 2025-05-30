@@ -790,6 +790,8 @@ DOMAIN-SUFFIX,celluloid.makima.online
 DOMAIN-SUFFIX,restrict.makima.online
 DOMAIN-SUFFIX,clip.makima.online
 DOMAIN-SUFFIX,omni.makima.online
+DOMAIN-SUFFIX,emby.asubaka.top
+DOMAIN-SUFFIX,emby2.asubaka.top
 IP-CIDR,43.139.188.149/32,no-resolve
 DOMAIN-WILDCARD,*.ffzy-online?.com
 DOMAIN-WILDCARD,*.ffzy-play?.com
