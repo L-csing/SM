@@ -782,6 +782,7 @@ DOMAIN-SUFFIX,zui.com
 DOMAIN-SUFFIX,zuimeitianqi.com
 DOMAIN-SUFFIX,zuoyebang.com
 DOMAIN-SUFFIX,a.204cloud.com
+DOMAIN-SUFFIX,pro.204cloud.com
 DOMAIN-SUFFIX,meowfly.net
 DOMAIN-SUFFIX,restrict.makima.online
 DOMAIN-SUFFIX,clip.makima.online
@@ -789,6 +790,7 @@ DOMAIN-SUFFIX,omni.makima.online
 DOMAIN-SUFFIX,emby.asubaka.top
 DOMAIN-SUFFIX,emby2.asubaka.top
 IP-CIDR,43.139.188.149/32,no-resolve
+IP-CIDR,202.189.5.63/32,no-resolve
 DOMAIN-WILDCARD,*.ffzy-online?.com
 DOMAIN-WILDCARD,*.ffzy-play?.com
 DOMAIN-WILDCARD,*.lz-cdn?.com
