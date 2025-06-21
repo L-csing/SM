@@ -6,6 +6,9 @@ DOMAIN-SUFFIX,aop3.204cloud.com
 DOMAIN-SUFFIX,aop4.204cloud.com
 DOMAIN-SUFFIX,aocn.204cloud.com
 
+# CCTV 相关
+DOMAIN-SUFFIX,cc.coemn.com
+
 # Younoyes 相关
 DOMAIN-SUFFIX,younoyes.com
 
