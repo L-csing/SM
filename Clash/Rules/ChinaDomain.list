@@ -788,6 +788,8 @@ DOMAIN-SUFFIX,mcdn.mobaiemby.site
 DOMAIN-SUFFIX,mcn.mobaiemby.site
 DOMAIN-SUFFIX,emby.meowfly.net
 DOMAIN-SUFFIX,ultra.asubaka.top
+DOMAIN-SUFFIX,api.dandanplay.net
+DOMAIN-SUFFIX,api.acg-danmaku.net/api/v2
 IP-CIDR,202.189.5.63/32,no-resolve
 IP-CIDR,81.71.1.137/32,no-resolve
 IP-CIDR,119.29.111.34/32,no-resolve
