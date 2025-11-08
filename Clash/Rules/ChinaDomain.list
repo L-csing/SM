@@ -800,6 +800,7 @@ IP-CIDR,74.48.116.108/32,no-resolve
 IP-CIDR,43.139.188.149/32,no-resolve
 IP-CIDR,202.189.5.63/32,no-resolve
 IP-CIDR,103.141.183.18/32,no-resolve
+IP-CIDR,107.174.176.176/32,no-resolve
 DOMAIN-WILDCARD,*.ffzy-online?.com
 DOMAIN-WILDCARD,*.ffzy-play?.com
 DOMAIN-WILDCARD,*.lz-cdn?.com
