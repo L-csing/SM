@@ -5293,3 +5293,11 @@ IP-CIDR,60.190.139.164/32,no-resolve
 IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve
 USER-AGENT,AVOS*
 AND,((DOMAIN-KEYWORD,stun),(DOMAIN-KEYWORD,bilibili))
+DOMAIN-SUFFIX,googleads.g.doubleclick.net
+DOMAIN-SUFFIX,admob.com
+DOMAIN-SUFFIX,app-measurement.com
+DOMAIN-SUFFIX,analytics.google.com
+DOMAIN-SUFFIX,unityads.com
+DOMAIN-SUFFIX,chartboost.com
+DOMAIN-SUFFIX,applovin.com
+DOMAIN-SUFFIX,facebookads.com
