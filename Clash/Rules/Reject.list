@@ -5301,3 +5301,7 @@ DOMAIN-SUFFIX,unityads.com
 DOMAIN-SUFFIX,chartboost.com
 DOMAIN-SUFFIX,applovin.com
 DOMAIN-SUFFIX,facebookads.com
+DOMAIN,ads.mtgsvc.com
+DOMAIN,ads.telegram.org
+DOMAIN,sponsored.telegram.org
+DOMAIN,tracking.telegram.org
