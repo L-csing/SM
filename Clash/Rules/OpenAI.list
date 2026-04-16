@@ -14,10 +14,10 @@ DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,stripe.com
 DOMAIN-KEYWORD,openai
-DOMAIN-SUFFIX,gemini.google.com
-DOMAIN-SUFFIX,generativelanguage.googleapis.com
-DOMAIN-SUFFIX,ai.google.dev
-DOMAIN-SUFFIX,alkalimina-pa.clients6.google.com
-DOMAIN-SUFFIX,aistudio.google.com
+DOMAIN,gemini.google.com
+DOMAIN,aistudio.google.com
+DOMAIN,ai.google.dev
+DOMAIN,generativelanguage.googleapis.com
+DOMAIN-KEYWORD,alkalimelt
 DOMAIN-KEYWORD,alkalimina-pa
-DOMAIN-KEYWORD,google-gemini
+DOMAIN-SUFFIX,googleusercontent.com
