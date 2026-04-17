@@ -1,6 +1,4 @@
-# Media
-
-# (Live)
+# === (Live) ===
 # > Twitch
 DOMAIN-SUFFIX,twitch.tv
 DOMAIN-SUFFIX,twitchcdn.net
@@ -9,90 +7,66 @@ DOMAIN-SUFFIX,jtvnw.net
 DOMAIN-SUFFIX,ext-twitch.tv
 DOMAIN-SUFFIX,twitch-ext.rootonline.de
 
-# (Music)
-# > Deezer
-DOMAIN-SUFFIX,deezer.com
-DOMAIN-SUFFIX,dzcdn.net
-# > JOOX
-DOMAIN-SUFFIX,joox.com
-DOMAIN-KEYWORD,jooxweb-api
-# > KKBOX
-DOMAIN-SUFFIX,kkbox.com
-DOMAIN-SUFFIX,kkbox.com.tw
-DOMAIN-SUFFIX,kfs.io
-# > Pandora
-DOMAIN-SUFFIX,pandora.com
-DOMAIN-SUFFIX,p-cdn.us
-# > SoundCloud
-DOMAIN-SUFFIX,sndcdn.com
-DOMAIN-SUFFIX,soundcloud.com
-# > Spotify
+# === (Music) ===
+# > Spotify (含歌词与封面加速)
 DOMAIN-SUFFIX,pscdn.co
 DOMAIN-SUFFIX,scdn.co
 DOMAIN-SUFFIX,spoti.fi
+DOMAIN-SUFFIX,spotify.com
+DOMAIN-SUFFIX,spotifycdn.com
+DOMAIN-SUFFIX,audio-ak-spotify-com.akamaized.net
 DOMAIN-KEYWORD,-spotify-com
-# > TIDAL
+# > Apple Music (如果你在安卓端使用)
+DOMAIN-SUFFIX,music.apple.com
+# > YouTube Music
+DOMAIN-SUFFIX,music.youtube.com
+# > TIDAL / Deezer / KKBOX
 DOMAIN-SUFFIX,tidal.com
+DOMAIN-SUFFIX,deezer.com
+DOMAIN-SUFFIX,dzcdn.net
+DOMAIN-SUFFIX,kkbox.com
+DOMAIN-SUFFIX,kkbox.com.tw
+DOMAIN-SUFFIX,kfs.io
+# > SoundCloud / Pandora
+DOMAIN-SUFFIX,sndcdn.com
+DOMAIN-SUFFIX,soundcloud.com
+DOMAIN-SUFFIX,pandora.com
+DOMAIN-SUFFIX,p-cdn.us
 
-# (Podcast)
-# > Himalaya
-DOMAIN-SUFFIX,himalaya.com
-# > Overcast
-DOMAIN-SUFFIX,overcast.fm
+# === (Video) ===
+# > YouTube (含 YouTube Kids 与交互补丁)
+DOMAIN-SUFFIX,youtube.com
+DOMAIN-SUFFIX,youtu.be
+DOMAIN-SUFFIX,yt.be
+DOMAIN-SUFFIX,ytimg.com
+DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,youtube-nocookie.com
+DOMAIN-SUFFIX,youtubeeducation.com
+DOMAIN,youtubei.googleapis.com
+DOMAIN,yt3.ggpht.com
+DOMAIN,jnn-pa.googleapis.com
 
-# (Video)
-# > AbemaTV
-DOMAIN-SUFFIX,abema.io
-DOMAIN-SUFFIX,abema.tv
-DOMAIN-SUFFIX,abema-tv.com
-DOMAIN-SUFFIX,ameba.jp
-DOMAIN-SUFFIX,hayabusa.io
-DOMAIN-SUFFIX,hayabusa.media
-DOMAIN,api-abematv.bucketeer.jp
-DOMAIN-KEYWORD,abematv.akamaized.net
-# > All 4
-DOMAIN-SUFFIX,c4assets.com
-DOMAIN-SUFFIX,channel4.com
-# > Amazon Prime Video
-DOMAIN-SUFFIX,aiv-cdn.net
-DOMAIN-SUFFIX,aiv-delivery.net
-DOMAIN-SUFFIX,amazonvideo.com
-DOMAIN-SUFFIX,media-amazon.com
-DOMAIN-SUFFIX,primevideo.com
-DOMAIN-SUFFIX,pv-cdn.net
-DOMAIN,atv-ps.amazon.com
-DOMAIN,fls-na.amazon.com
-DOMAIN-KEYWORD,avoddashs
-# > Bahamut
-DOMAIN-SUFFIX,bahamut.com.tw
-DOMAIN-SUFFIX,gamer.com.tw
-DOMAIN,bahamut.akamaized.net
-# > BBC iPlayer
-DOMAIN-SUFFIX,bbc.co.uk
-DOMAIN-SUFFIX,bbci.co.uk
-DOMAIN-KEYWORD,bbcfmt
-DOMAIN-KEYWORD,uk-live
-# > DAZN
-DOMAIN-SUFFIX,dazn.com
-DOMAIN-SUFFIX,dazn-api.com
-DOMAIN-SUFFIX,dazndn.com
-DOMAIN-SUFFIX,indazn.com
-DOMAIN-KEYWORD,voddazn
-# > discovery+
-DOMAIN-SUFFIX,disco-api.com
-DOMAIN-SUFFIX,discoveryplus.co.uk
-DOMAIN-SUFFIX,discoveryplus.com
-DOMAIN-SUFFIX,dnitv.com
-# > Disney+
-DOMAIN-SUFFIX,bamgrid.com
+# > Netflix (含版权校验兜底)
+DOMAIN-SUFFIX,netflix.com
+DOMAIN-SUFFIX,netflix.net
+DOMAIN-SUFFIX,nflxext.com
+DOMAIN-SUFFIX,nflximg.com
+DOMAIN-SUFFIX,nflximg.net
+DOMAIN-SUFFIX,nflxso.net
+DOMAIN-SUFFIX,nflxvideo.net
+DOMAIN-SUFFIX,fast.com
+DOMAIN-KEYWORD,netflixdnstest
+GEOIP,NETFLIX,no-resolve
+
+# > Disney+ (含 2026 最新验证域名)
 DOMAIN-SUFFIX,disneyplus.com
 DOMAIN-SUFFIX,disney-plus.net
 DOMAIN-SUFFIX,disneystreaming.com
+DOMAIN-SUFFIX,disney-api.com
 DOMAIN-SUFFIX,dssott.com
+DOMAIN-SUFFIX,bamgrid.com
 DOMAIN,cdn.registerdisney.go.com
-# > DMM
-DOMAIN-SUFFIX,dmm.co.jp
-DOMAIN-SUFFIX,dmm.com
+
 # > HBO / Max
 DOMAIN-SUFFIX,max.com
 DOMAIN-SUFFIX,hbo.com
@@ -102,61 +76,51 @@ DOMAIN-SUFFIX,hbomaxcdn.com
 DOMAIN-SUFFIX,hbonow.com
 DOMAIN-SUFFIX,hbogoasia.com
 DOMAIN-SUFFIX,hbogoasia.hk
-# > Hulu
+
+# > Amazon Prime Video
+DOMAIN-SUFFIX,primevideo.com
+DOMAIN-SUFFIX,amazonvideo.com
+DOMAIN-SUFFIX,aiv-cdn.net
+DOMAIN-SUFFIX,aiv-delivery.net
+DOMAIN-SUFFIX,media-amazon.com
+DOMAIN-SUFFIX,pv-cdn.net
+DOMAIN,atv-ps.amazon.com
+DOMAIN-KEYWORD,avoddashs
+
+# > 主流地区性视频 (Bahamut / AbemaTV / Viu)
+DOMAIN-SUFFIX,bahamut.com.tw
+DOMAIN-SUFFIX,gamer.com.tw
+DOMAIN-SUFFIX,abema.io
+DOMAIN-SUFFIX,abema.tv
+DOMAIN-SUFFIX,abema-tv.com
+DOMAIN-SUFFIX,viu.com
+DOMAIN-SUFFIX,viu.tv
+DOMAIN-SUFFIX,wetv.vip
+DOMAIN-SUFFIX,litv.tv
+
+# > Hulu / Paramount+ / Peacock
 DOMAIN-SUFFIX,hulu.com
 DOMAIN-SUFFIX,huluim.com
 DOMAIN-SUFFIX,hulustream.com
-DOMAIN-SUFFIX,happyon.jp
-DOMAIN-SUFFIX,hulu.jp
-# > ITV
-DOMAIN-SUFFIX,itv.com
-DOMAIN-SUFFIX,itvstatic.com
-# > KKTV
-DOMAIN-SUFFIX,kktv.com.tw
-DOMAIN-SUFFIX,kktv.me
-DOMAIN,kktv-theater.kk.stream
-# > LINE TV
-DOMAIN-SUFFIX,linetv.tw
-# > LiTV
-DOMAIN-SUFFIX,litv.tv
-# > Netflix
-DOMAIN-SUFFIX,fast.com
-DOMAIN-SUFFIX,netflix.com
-DOMAIN-SUFFIX,netflix.net
-DOMAIN-SUFFIX,nflxext.com
-DOMAIN-SUFFIX,nflximg.com
-DOMAIN-SUFFIX,nflximg.net
-DOMAIN-SUFFIX,nflxso.net
-DOMAIN-SUFFIX,nflxvideo.net
-DOMAIN-KEYWORD,netflixdnstest
-GEOIP,NETFLIX,no-resolve
-# > Paramount+
-DOMAIN-SUFFIX,cbsi.com
 DOMAIN-SUFFIX,paramountplus.com
 DOMAIN-SUFFIX,pplusstatic.com
-# > Peacock
 DOMAIN-SUFFIX,peacocktv.com
+
+# === (Social Media Content) ===
+# > TikTok (国际版)
+DOMAIN-SUFFIX,tiktok.com
+DOMAIN-SUFFIX,tiktokv.com
+DOMAIN-SUFFIX,tiktokcdn.com
+DOMAIN-SUFFIX,byteoversea.com
+DOMAIN-SUFFIX,muscdn.com
+# > Instagram / Threads
+DOMAIN-SUFFIX,instagram.com
+DOMAIN-SUFFIX,cdninstagram.com
+DOMAIN-SUFFIX,threads.net
+
+# === (Adult Content) ===
 # > Pornhub
+DOMAIN-SUFFIX,pornhub.com
 DOMAIN-SUFFIX,phncdn.com
 DOMAIN-SUFFIX,phprcdn.com
-DOMAIN-SUFFIX,pornhub.com
 DOMAIN-SUFFIX,pornhubpremium.com
-# > ViuTV
-DOMAIN-SUFFIX,viu.com
-DOMAIN-SUFFIX,viu.tv
-# > WeTV
-DOMAIN-SUFFIX,wetv.vip
-DOMAIN-SUFFIX,wetvinfo.com
-# > YouTube
-DOMAIN-SUFFIX,googlevideo.com
-DOMAIN-SUFFIX,withyoutube.com
-DOMAIN-SUFFIX,youtu.be
-DOMAIN-SUFFIX,youtube.com
-DOMAIN-SUFFIX,youtubeeducation.com
-DOMAIN-SUFFIX,youtubegaming.com
-DOMAIN-SUFFIX,youtubekids.com
-DOMAIN-SUFFIX,youtube-nocookie.com
-DOMAIN-SUFFIX,yt.be
-DOMAIN-SUFFIX,ytimg.com
-DOMAIN,youtubei.googleapis.com
-DOMAIN,yt3.ggpht.com
