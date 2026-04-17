@@ -1,108 +1,226 @@
-# === 小米与国行安卓系统级直连 (极其重要) ===
-DOMAIN-SUFFIX,xiaomi.com
-DOMAIN-SUFFIX,mi.com
-DOMAIN-SUFFIX,miui.com
-DOMAIN-SUFFIX,xiaomi.net
-DOMAIN-SUFFIX,mifile.cn
-DOMAIN-SUFFIX,mi-common.com
-DOMAIN-SUFFIX,micloud.com
-DOMAIN-SUFFIX,xiaomiyoupin.com
-DOMAIN-SUFFIX,xiaomiev.com
-DOMAIN-SUFFIX,xiaoaisound.com
-DOMAIN-SUFFIX,xiaomixiaoai.com
-DOMAIN-SUFFIX,heytap.com
-DOMAIN-SUFFIX,oppo.com
-DOMAIN-SUFFIX,vivo.com
-DOMAIN-SUFFIX,huawei.com
-DOMAIN-SUFFIX,vmall.com
-DOMAIN-SUFFIX,hihonor.com
+# ==========================================
+# 1. 你的专属定制 (Emby/影视源/硬件/私有IP)
+# ==========================================
+# 私人影音与弹幕 API
+DOMAIN-SUFFIX,vip.nanflix.net
+DOMAIN-SUFFIX,567741.xyz
+DOMAIN-SUFFIX,mcdn.mobaiemby.site
+DOMAIN-SUFFIX,mygcns.mobaiemby.site
+DOMAIN-SUFFIX,mcn.mobaiemby.site
+DOMAIN-SUFFIX,emby.meowfly.net
+DOMAIN-SUFFIX,ultra.asubaka.top
+DOMAIN-SUFFIX,api.dandanplay.net
+DOMAIN-SUFFIX,api.acg-danmaku.net
 
-# === 互联网巨头全系 (阿里/腾讯/百度/字节/网易) ===
-DOMAIN-SUFFIX,alibaba.com
-DOMAIN-SUFFIX,alicdn.com
-DOMAIN-SUFFIX,taobao.com
-DOMAIN-SUFFIX,tmall.com
-DOMAIN-SUFFIX,alipay.com
-DOMAIN-SUFFIX,aliyun.com
+# 影视采集站/播放器源 (TVBox等必备)
+DOMAIN-WILDCARD,*.ffzy-online?.com
+DOMAIN-WILDCARD,*.ffzy-play?.com
+DOMAIN-WILDCARD,*.lz-cdn?.com
+DOMAIN-WILDCARD,*.lz-cdn??.com
+DOMAIN-WILDCARD,*.qhimgs?.com
+
+# 网络硬件与驱动 (Nvidia下载/Unifi路由器)
+DOMAIN,cn.download.nvidia.com
+DOMAIN,config.ubnt.com
+DOMAIN,dl.ubnt.com
+DOMAIN,ocsp.globalsign.com
+DOMAIN,ocsp2.globalsign.com
+
+# 你的专属直连 IP 段
+IP-CIDR,110.42.42.172/32,no-resolve
+IP-CIDR,178.239.125.136/32,no-resolve
+IP-CIDR,167.253.97.64/32,no-resolve
+IP-CIDR,202.189.5.63/32,no-resolve
+IP-CIDR,81.71.1.137/32,no-resolve
+IP-CIDR,119.29.111.34/32,no-resolve
+IP-CIDR,74.48.116.108/32,no-resolve
+IP-CIDR,43.139.188.149/32,no-resolve
+IP-CIDR,103.141.183.18/32,no-resolve
+IP-CIDR,107.174.176.176/32,no-resolve
+IP-CIDR,95.181.191.120/32,no-resolve
+
+# ==========================================
+# 2. 社交、通讯与社区 (腾讯/微博/酷安等)
+# ==========================================
+DOMAIN-SUFFIX,weixin.com
+DOMAIN-SUFFIX,wechat.com
+DOMAIN-SUFFIX,wechatpay.com
+DOMAIN-SUFFIX,tenpay.com
 DOMAIN-SUFFIX,qq.com
 DOMAIN-SUFFIX,tencent.com
+DOMAIN-SUFFIX,url.cn
 DOMAIN-SUFFIX,gtimg.cn
 DOMAIN-SUFFIX,gtimg.com
 DOMAIN-SUFFIX,qpic.cn
 DOMAIN-SUFFIX,qlogo.cn
-DOMAIN-SUFFIX,baidu.com
-DOMAIN-SUFFIX,baidustatic.com
-DOMAIN-SUFFIX,bdimg.com
-DOMAIN-SUFFIX,bytedance.com
-DOMAIN-SUFFIX,douyin.com
-DOMAIN-SUFFIX,pstatp.com
-DOMAIN-SUFFIX,snssdk.com
-DOMAIN-SUFFIX,163.com
-DOMAIN-SUFFIX,netease.com
-
-# === 影音、社交与网盘 (直连省流量) ===
-DOMAIN-SUFFIX,bilibili.com
-DOMAIN-SUFFIX,biliapi.net
-DOMAIN-SUFFIX,hdslb.com
-DOMAIN-SUFFIX,xiaohongshu.com
-DOMAIN-SUFFIX,xhscdn.com
 DOMAIN-SUFFIX,weibo.com
 DOMAIN-SUFFIX,weibocdn.com
 DOMAIN-SUFFIX,zhihu.com
 DOMAIN-SUFFIX,zhimg.com
-DOMAIN-SUFFIX,123pan.com
-DOMAIN-SUFFIX,123pan.cn
-DOMAIN-SUFFIX,alipan.com
-DOMAIN-SUFFIX,aliyundrive.net
-DOMAIN-SUFFIX,quark.cn
-DOMAIN-SUFFIX,pan.quark.cn
+DOMAIN-SUFFIX,xiaohongshu.com
+DOMAIN-SUFFIX,xhscdn.com
+DOMAIN-SUFFIX,coolapk.com
+DOMAIN-SUFFIX,coolapkmarket.com
+DOMAIN-SUFFIX,tieba.com
+DOMAIN-SUFFIX,nga.cn
+DOMAIN-SUFFIX,hupu.com
 
-# === 购物与生活 (京东/拼多多/美团/高德/携程) ===
+# ==========================================
+# 3. 手机与系统生态 (小米/华为/OV)
+# ==========================================
+DOMAIN-SUFFIX,xiaomi.com
+DOMAIN-SUFFIX,mi.com
+DOMAIN-SUFFIX,miui.com
+DOMAIN-SUFFIX,micloud.com
+DOMAIN-SUFFIX,mifile.cn
+DOMAIN-SUFFIX,mi-common.com
+DOMAIN-SUFFIX,xiaomi.net
+DOMAIN-SUFFIX,xiaomiyoupin.com
+DOMAIN-SUFFIX,xiaomiev.com
+DOMAIN-SUFFIX,xiaoaisound.com
+DOMAIN-SUFFIX,huawei.com
+DOMAIN-SUFFIX,hicloud.com
+DOMAIN-SUFFIX,vmall.com
+DOMAIN-SUFFIX,hihonor.com
+DOMAIN-SUFFIX,oppo.com
+DOMAIN-SUFFIX,heytap.com
+DOMAIN-SUFFIX,vivo.com
+
+# ==========================================
+# 4. 电商、外卖与出行 (阿里/京东/拼多多/美团)
+# ==========================================
+DOMAIN-SUFFIX,taobao.com
+DOMAIN-SUFFIX,tmall.com
+DOMAIN-SUFFIX,1688.com
+DOMAIN-SUFFIX,alicdn.com
+DOMAIN-SUFFIX,alibaba.com
+DOMAIN-SUFFIX,alipay.com
+DOMAIN-SUFFIX,alipayobjects.com
 DOMAIN-SUFFIX,jd.com
 DOMAIN-SUFFIX,360buyimg.com
+DOMAIN-SUFFIX,jdcache.com
+DOMAIN-SUFFIX,jdpay.com
 DOMAIN-SUFFIX,pinduoduo.com
 DOMAIN-SUFFIX,yangkeduo.com
 DOMAIN-SUFFIX,meituan.com
+DOMAIN-SUFFIX,meituan.net
 DOMAIN-SUFFIX,dianping.com
+DOMAIN-SUFFIX,dpfile.com
+DOMAIN-SUFFIX,ele.me
+DOMAIN-SUFFIX,cainiao.com
 DOMAIN-SUFFIX,amap.com
 DOMAIN-SUFFIX,autonavi.com
 DOMAIN-SUFFIX,ctrip.com
 
-# === 游戏国内 CDN 直连 (Steam/Xbox/米哈游) ===
+# ==========================================
+# 5. 视频、直播与音乐 (B站/字节/爱优腾/快手)
+# ==========================================
+DOMAIN-SUFFIX,bilibili.com
+DOMAIN-SUFFIX,bilibili.cn
+DOMAIN-SUFFIX,biliapi.net
+DOMAIN-SUFFIX,hdslb.com
+DOMAIN-SUFFIX,b23.tv
+DOMAIN-SUFFIX,acg.tv
+DOMAIN-SUFFIX,douyin.com
+DOMAIN-SUFFIX,pstatp.com
+DOMAIN-SUFFIX,snssdk.com
+DOMAIN-SUFFIX,toutiao.com
+DOMAIN-SUFFIX,ixigua.com
+DOMAIN-SUFFIX,kuaishou.com
+DOMAIN-SUFFIX,yximgs.com
+DOMAIN-SUFFIX,iqiyi.com
+DOMAIN-SUFFIX,youku.com
+DOMAIN-SUFFIX,mgtv.com
+DOMAIN-SUFFIX,acfun.cn
+DOMAIN-SUFFIX,netease.com
+DOMAIN-SUFFIX,163.com
+DOMAIN-SUFFIX,126.net
+
+# ==========================================
+# 6. 云盘、网盘与下载 (满速直连)
+# ==========================================
+DOMAIN-SUFFIX,115.com
+DOMAIN-SUFFIX,115cdn.com
+DOMAIN-SUFFIX,115cdn.net
+DOMAIN-SUFFIX,115img.com
+DOMAIN-SUFFIX,anxia.com
+DOMAIN-SUFFIX,123pan.com
+DOMAIN-SUFFIX,123pan.cn
+DOMAIN-SUFFIX,alipan.com
+DOMAIN-SUFFIX,aliyundrive.com
+DOMAIN-SUFFIX,aliyundrive.net
+DOMAIN-SUFFIX,alicloudccp.com
+DOMAIN-SUFFIX,quark.cn
+DOMAIN-SUFFIX,pan.quark.cn
+DOMAIN-SUFFIX,baidu.com
+DOMAIN-SUFFIX,baidupcs.com
+DOMAIN-SUFFIX,baidubce.com
+DOMAIN-SUFFIX,lanzou.com
+DOMAIN-SUFFIX,xunlei.com
+DOMAIN-SUFFIX,ctfile.com
+DOMAIN-SUFFIX,weiyun.com
+
+# ==========================================
+# 7. PC 游戏、主机与加速器
+# ==========================================
 DOMAIN-SUFFIX,steamcontent.com
 DOMAIN-SUFFIX,steampowered.com.8686c.com
+DOMAIN-SUFFIX,steamchina.com
 DOMAIN-SUFFIX,wmsjsteam.com
 DOMAIN-SUFFIX,xboxlive.cn
+DOMAIN-SUFFIX,assets1.xboxlive.cn
+DOMAIN-SUFFIX,assets2.xboxlive.cn
 DOMAIN-SUFFIX,mihoyo.com
 DOMAIN-SUFFIX,yuanshen.com
+DOMAIN-SUFFIX,3dmgame.com
+DOMAIN-SUFFIX,ali213.net
+DOMAIN-SUFFIX,9game.cn
 DOMAIN-SUFFIX,blizzard.com
 DOMAIN-SUFFIX,battle.net
 
-# === 基础设施、CDN 与公共 DNS ===
-DOMAIN-SUFFIX,volccdn.com
-DOMAIN-SUFFIX,volces.com
-DOMAIN-SUFFIX,bytegecko.com
-DOMAIN-SUFFIX,qhres.com
-DOMAIN-SUFFIX,dnspod.cn
-DOMAIN,dns.alidns.com
-DOMAIN,doh.pub
-DOMAIN,dot.pub
+# ==========================================
+# 8. 金融、银行与安全验证
+# ==========================================
+DOMAIN-SUFFIX,icbc.com.cn
+DOMAIN-SUFFIX,95588.com
+DOMAIN-SUFFIX,ccb.com
+DOMAIN-SUFFIX,abchina.com
+DOMAIN-SUFFIX,boc.cn
+DOMAIN-SUFFIX,bankcomm.com
+DOMAIN-SUFFIX,cmbchina.com
+DOMAIN-SUFFIX,cmbimg.com
+DOMAIN-SUFFIX,pingan.com
+DOMAIN-SUFFIX,unionpay.com
+DOMAIN-SUFFIX,95516.com
+DOMAIN-SUFFIX,eastmoney.com
 
-# === 银行、运营商与公共服务 ===
+# ==========================================
+# 9. 基础设施、政府与公共 DNS
+# ==========================================
+DOMAIN-SUFFIX,12306.cn
+DOMAIN-SUFFIX,12306.com
+DOMAIN-SUFFIX,gov.cn
 DOMAIN-SUFFIX,10010.com
 DOMAIN-SUFFIX,10086.cn
 DOMAIN-SUFFIX,189.cn
-DOMAIN-SUFFIX,12306.cn
-DOMAIN-SUFFIX,95516.com
-DOMAIN-SUFFIX,cmbchina.com
-DOMAIN-SUFFIX,ccb.com
-DOMAIN-SUFFIX,gov.cn
+DOMAIN-SUFFIX,chinaunicom.cn
+DOMAIN-SUFFIX,chinamobile.com
+DOMAIN-SUFFIX,volccdn.com
+DOMAIN-SUFFIX,volces.com
+DOMAIN-SUFFIX,dnspod.cn
+DOMAIN-SUFFIX,qcloud.com
+DOMAIN-SUFFIX,tencent-cloud.com
+DOMAIN,doh.pub
+DOMAIN,dot.pub
+DOMAIN,dns.alidns.com
 
-# === 关键词兜底与 User-Agent (终极保险) ===
+# ==========================================
+# 10. 终极关键词与 User-Agent (拦截兜底)
+# ==========================================
 DOMAIN-KEYWORD,alicdn
 DOMAIN-KEYWORD,baidustatic
 DOMAIN-KEYWORD,mifile
-DOMAIN-KEYWORD,migu
 USER-AGENT,%E4%BC%98%E9%85%B7*
 USER-AGENT,%E6%89%8B%E6%9C%BA%E6%B7%98%E5%AE%9D*
+USER-AGENT,TeslaMap
 USER-AGENT,TeslaMap
