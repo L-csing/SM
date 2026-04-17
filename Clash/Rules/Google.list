@@ -1,9 +1,10 @@
-# 基础服务与社交
+# === 基础服务与社交 (Core Infrastructure) ===
 DOMAIN-SUFFIX,1e100.net
 DOMAIN-SUFFIX,2mdn.net
 DOMAIN-SUFFIX,app-measurement.net
 DOMAIN-SUFFIX,g.co
 DOMAIN-SUFFIX,ggpht.com
+DOMAIN-SUFFIX,ggpht.cn
 DOMAIN-SUFFIX,goo.gl
 DOMAIN-SUFFIX,googleapis.cn
 DOMAIN-SUFFIX,gstatic.cn
@@ -11,28 +12,41 @@ DOMAIN-SUFFIX,gvt0.com
 DOMAIN-SUFFIX,gvt1.com
 DOMAIN-SUFFIX,gvt2.com
 DOMAIN-SUFFIX,gvt3.com
+DOMAIN-SUFFIX,recaptcha.net
+DOMAIN-SUFFIX,google-analytics.com
+DOMAIN-SUFFIX,googletagmanager.com
 
-# YouTube 专项
+# === YouTube 专项 (YouTube Ecosystem) ===
+# 确保视频流和嵌入播放正常
 DOMAIN-SUFFIX,youtu.be
 DOMAIN-SUFFIX,youtube.com
 DOMAIN-SUFFIX,yt.be
 DOMAIN-SUFFIX,ytimg.com
+DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,youtube-nocookie.com
+DOMAIN-SUFFIX,nhacmp3.com
 
-# 基础接口（让 Gemini 规则集去处理它需要的子域名，这里做兜底）
+# === 基础接口与账号 (API & Account) ===
+# 处理 Google 登录、同步、翻译等基础接口
 DOMAIN-SUFFIX,googleapis.com
 DOMAIN-SUFFIX,gstatic.com
 DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-SUFFIX,google.cn
+DOMAIN-SUFFIX,google.com.hk
 
-# 账号与搜索（排除掉关键词干扰）
+# === 关键词兜底 (Keyword Catch-all) ===
+# 排除 AI 相关后的 Google 全系关键词覆盖
 DOMAIN-KEYWORD,gmail
 DOMAIN-KEYWORD,google
 
-# GitHub 与其他
+# === GitHub 与其他 (Developer & Cloud) ===
 DOMAIN-SUFFIX,github.com
 DOMAIN-SUFFIX,github.io
+# 必须加上，用于处理 GitHub 图片、头像及 Release 下载
+DOMAIN-SUFFIX,githubusercontent.com
 DOMAIN-KEYWORD,github
 DOMAIN-SUFFIX,mori.teracloud.jp
 
-# IP 段保持不变
+# === IP 段 (Static IP Ranges) ===
 IP-CIDR,173.194.0.0/16,no-resolve
 IP-CIDR,74.125.0.0/16,no-resolve
