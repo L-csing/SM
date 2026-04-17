@@ -1,23 +1,41 @@
+# === OpenAI (ChatGPT) 核心与资源 ===
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+DOMAIN-KEYWORD,openai
+
+# === OpenAI 验证、监控与支付 (关键基础设施) ===
 DOMAIN-SUFFIX,auth0.com
 DOMAIN-SUFFIX,challenges.cloudflare.com
-DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,client-api.arkoselabs.com
 DOMAIN-SUFFIX,events.statsigapi.net
 DOMAIN-SUFFIX,featuregates.org
 DOMAIN-SUFFIX,identrust.com
 DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,intercomcdn.com
-DOMAIN-SUFFIX,oaistatic.com
-DOMAIN-SUFFIX,oaiusercontent.com
-DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,stripe.com
-DOMAIN-KEYWORD,openai
+
+# === Google Gemini & AI Studio (含补丁) ===
 DOMAIN,gemini.google.com
 DOMAIN,aistudio.google.com
 DOMAIN,ai.google.dev
 DOMAIN,generativelanguage.googleapis.com
+DOMAIN-SUFFIX,googleusercontent.com
 DOMAIN-KEYWORD,alkalimelt
 DOMAIN-KEYWORD,alkalimina-pa
-DOMAIN-SUFFIX,googleusercontent.com
+
+# === Anthropic (Claude) 核心 ===
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+
+# === 其他主流 AI 与生产力辅助 ===
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,poe.com
+DOMAIN-SUFFIX,cursor.sh
+
+# === AI 视频演示补丁 (解决 Sora 等视频无法播放) ===
+DOMAIN-SUFFIX,vimeo.com
+DOMAIN-SUFFIX,vimeocdn.com
