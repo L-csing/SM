@@ -31,6 +31,11 @@ DOMAIN-KEYWORD,alkalimina-pa
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 
+# === Manus AI (新一代 AI Agent) ===
+DOMAIN-SUFFIX,manus.im
+DOMAIN-SUFFIX,manus.ai
+DOMAIN-SUFFIX,vercel.app
+
 # === 其他主流 AI 与生产力辅助 ===
 DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,poe.com
