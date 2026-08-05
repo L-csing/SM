@@ -1,4 +1,9 @@
-- DOMAIN-SUFFIX,voice.google.com,us Google Voice
-- DOMAIN-SUFFIX,telephony.goog,us Google Voice
-- DOMAIN-KEYWORD,telephony,us Google Voice
-- DOMAIN-KEYWORD,voice,us Google Voice
+# === Google Voice 核心分流规则 ===
+DOMAIN-SUFFIX,voice.google.com,us Google Voice
+DOMAIN-SUFFIX,telephony.goog,us Google Voice
+DOMAIN-KEYWORD,telephony,us Google Voice
+DOMAIN-KEYWORD,voice,us Google Voice
+
+# === 补充：语音通话 STUN/VoIP 底层信令与端口 ===
+DOMAIN-SUFFIX,googleapis.com,us Google Voice
+IP-CIDR,74.125.0.0/16,us Google Voice,no-resolve
