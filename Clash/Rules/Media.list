@@ -1,5 +1,4 @@
-# === (Live) ===
-# > Twitch
+# === (Live) Twitch 直播 ===
 DOMAIN-SUFFIX,twitch.tv
 DOMAIN-SUFFIX,twitchcdn.net
 DOMAIN-SUFFIX,ttvnw.net
@@ -7,8 +6,7 @@ DOMAIN-SUFFIX,jtvnw.net
 DOMAIN-SUFFIX,ext-twitch.tv
 DOMAIN-SUFFIX,twitch-ext.rootonline.de
 
-# === (Music) ===
-# > Spotify (含歌词与封面加速)
+# === (Music) Spotify, Apple Music & 全球音乐加速 ===
 DOMAIN-SUFFIX,pscdn.co
 DOMAIN-SUFFIX,scdn.co
 DOMAIN-SUFFIX,spoti.fi
@@ -16,37 +14,20 @@ DOMAIN-SUFFIX,spotify.com
 DOMAIN-SUFFIX,spotifycdn.com
 DOMAIN-SUFFIX,audio-ak-spotify-com.akamaized.net
 DOMAIN-KEYWORD,-spotify-com
-# > Apple Music (如果你在安卓端使用)
 DOMAIN-SUFFIX,music.apple.com
-# > YouTube Music
-DOMAIN-SUFFIX,music.youtube.com
-# > TIDAL / Deezer / KKBOX
 DOMAIN-SUFFIX,tidal.com
 DOMAIN-SUFFIX,deezer.com
 DOMAIN-SUFFIX,dzcdn.net
 DOMAIN-SUFFIX,kkbox.com
 DOMAIN-SUFFIX,kkbox.com.tw
 DOMAIN-SUFFIX,kfs.io
-# > SoundCloud / Pandora
 DOMAIN-SUFFIX,sndcdn.com
 DOMAIN-SUFFIX,soundcloud.com
 DOMAIN-SUFFIX,pandora.com
 DOMAIN-SUFFIX,p-cdn.us
 
-# === (Video) ===
-# > YouTube (含 YouTube Kids 与交互补丁)
-DOMAIN-SUFFIX,youtube.com
-DOMAIN-SUFFIX,youtu.be
-DOMAIN-SUFFIX,yt.be
-DOMAIN-SUFFIX,ytimg.com
-DOMAIN-SUFFIX,googlevideo.com
-DOMAIN-SUFFIX,youtube-nocookie.com
-DOMAIN-SUFFIX,youtubeeducation.com
-DOMAIN,youtubei.googleapis.com
-DOMAIN,yt3.ggpht.com
-DOMAIN,jnn-pa.googleapis.com
-
-# > Netflix (含版权校验兜底)
+# === (Video) 国际主流流媒体平台 (Netflix / Disney+ / HBO Max / Prime Video 等) ===
+# (注: YouTube 已由 Google.list 统一接管，此处已完美剔除以防路由冲突)
 DOMAIN-SUFFIX,netflix.com
 DOMAIN-SUFFIX,netflix.net
 DOMAIN-SUFFIX,nflxext.com
@@ -56,9 +37,7 @@ DOMAIN-SUFFIX,nflxso.net
 DOMAIN-SUFFIX,nflxvideo.net
 DOMAIN-SUFFIX,fast.com
 DOMAIN-KEYWORD,netflixdnstest
-GEOIP,NETFLIX,no-resolve
 
-# > Disney+ (含 2026 最新验证域名)
 DOMAIN-SUFFIX,disneyplus.com
 DOMAIN-SUFFIX,disney-plus.net
 DOMAIN-SUFFIX,disneystreaming.com
@@ -67,7 +46,6 @@ DOMAIN-SUFFIX,dssott.com
 DOMAIN-SUFFIX,bamgrid.com
 DOMAIN,cdn.registerdisney.go.com
 
-# > HBO / Max
 DOMAIN-SUFFIX,max.com
 DOMAIN-SUFFIX,hbo.com
 DOMAIN-SUFFIX,hbogo.com
@@ -77,7 +55,6 @@ DOMAIN-SUFFIX,hbonow.com
 DOMAIN-SUFFIX,hbogoasia.com
 DOMAIN-SUFFIX,hbogoasia.hk
 
-# > Amazon Prime Video
 DOMAIN-SUFFIX,primevideo.com
 DOMAIN-SUFFIX,amazonvideo.com
 DOMAIN-SUFFIX,aiv-cdn.net
@@ -87,7 +64,6 @@ DOMAIN-SUFFIX,pv-cdn.net
 DOMAIN,atv-ps.amazon.com
 DOMAIN-KEYWORD,avoddashs
 
-# > 主流地区性视频 (Bahamut / AbemaTV / Viu)
 DOMAIN-SUFFIX,bahamut.com.tw
 DOMAIN-SUFFIX,gamer.com.tw
 DOMAIN-SUFFIX,abema.io
@@ -98,7 +74,6 @@ DOMAIN-SUFFIX,viu.tv
 DOMAIN-SUFFIX,wetv.vip
 DOMAIN-SUFFIX,litv.tv
 
-# > Hulu / Paramount+ / Peacock
 DOMAIN-SUFFIX,hulu.com
 DOMAIN-SUFFIX,huluim.com
 DOMAIN-SUFFIX,hulustream.com
@@ -106,20 +81,17 @@ DOMAIN-SUFFIX,paramountplus.com
 DOMAIN-SUFFIX,pplusstatic.com
 DOMAIN-SUFFIX,peacocktv.com
 
-# === (Social Media Content) ===
-# > TikTok (国际版)
+# === (Social Media Content) TikTok, Instagram & Threads ===
 DOMAIN-SUFFIX,tiktok.com
 DOMAIN-SUFFIX,tiktokv.com
 DOMAIN-SUFFIX,tiktokcdn.com
 DOMAIN-SUFFIX,byteoversea.com
 DOMAIN-SUFFIX,muscdn.com
-# > Instagram / Threads
 DOMAIN-SUFFIX,instagram.com
 DOMAIN-SUFFIX,cdninstagram.com
 DOMAIN-SUFFIX,threads.net
 
-# === (Adult Content) ===
-# > Pornhub
+# === (Adult Content) Pornhub ===
 DOMAIN-SUFFIX,pornhub.com
 DOMAIN-SUFFIX,phncdn.com
 DOMAIN-SUFFIX,phprcdn.com
