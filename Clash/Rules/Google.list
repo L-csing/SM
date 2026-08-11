@@ -1,55 +1,42 @@
-# === Google 核心服务 & Chrome 同步 (全平台) ===
+# === Google 核心域名 (全系服务基石) ===
 DOMAIN-SUFFIX,google.com
 DOMAIN-SUFFIX,google.com.hk
 DOMAIN-SUFFIX,chrome.com
-DOMAIN-SUFFIX,clients.google.com
-DOMAIN-SUFFIX,clients1.google.com
-DOMAIN-SUFFIX,clients2.google.com
-DOMAIN-SUFFIX,clients3.google.com
-DOMAIN-SUFFIX,clients4.google.com
-DOMAIN-SUFFIX,update.googleapis.com
-DOMAIN-SUFFIX,dl.google.com
-DOMAIN-SUFFIX,dl.l.google.com
+DOMAIN-SUFFIX,pki.goog
+DOMAIN-SUFFIX,g.co
+DOMAIN-SUFFIX,goo.gl
 
-# === Google Play 商店与国行 GMS 兼容 ===
-# 解决国行机连接 Play 商店慢、消息推送延迟的问题
+# === Google Play、GMS 与安卓系统底层通信 ===
 DOMAIN-SUFFIX,android.com
-DOMAIN-SUFFIX,play.google.com
 DOMAIN-SUFFIX,market.android.com
-DOMAIN-SUFFIX,services.googleapis.cn
-DOMAIN-SUFFIX,googleapis-pa.googleapis.com
+DOMAIN-SUFFIX,play.google.com
 DOMAIN-SUFFIX,firebase.com
 DOMAIN-SUFFIX,firebaseio.com
 DOMAIN,mtalk.google.com
 
-# === 静态资源、字体与验证 (解决网页加载卡顿) ===
-DOMAIN-SUFFIX,fonts.googleapis.com
-DOMAIN-SUFFIX,fonts.gstatic.com
-DOMAIN-SUFFIX,gstatic.com
+# === API、静态资源与验证码 (解决网页转圈卡顿) ===
 DOMAIN-SUFFIX,googleapis.com
-DOMAIN-SUFFIX,googleusercontent.com
-DOMAIN-SUFFIX,pki.goog
-DOMAIN-SUFFIX,g.co
-DOMAIN-SUFFIX,ggpht.com
-DOMAIN-SUFFIX,gstatic.cn
 DOMAIN-SUFFIX,googleapis.cn
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,gstatic.cn
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-SUFFIX,ggpht.com
+DOMAIN-SUFFIX,ggpht.cn
 DOMAIN-SUFFIX,recaptcha.net
+DOMAIN-SUFFIX,update.googleapis.com
 
-# === YouTube 专项 ===
+# === YouTube 视频专项加速 ===
 DOMAIN-SUFFIX,youtube.com
 DOMAIN-SUFFIX,youtu.be
 DOMAIN-SUFFIX,yt.be
 DOMAIN-SUFFIX,ytimg.com
 DOMAIN-SUFFIX,googlevideo.com
 DOMAIN-SUFFIX,youtube-nocookie.com
-DOMAIN-SUFFIX,nhacmp3.com
 
-# === 基础架构与基础设施 ===
+# === 谷歌底层基础架构建设 ===
 DOMAIN-SUFFIX,1e100.net
 DOMAIN-SUFFIX,2mdn.net
 DOMAIN-SUFFIX,app-measurement.net
-DOMAIN-SUFFIX,ggpht.cn
-DOMAIN-SUFFIX,goo.gl
 DOMAIN-SUFFIX,gvt0.com
 DOMAIN-SUFFIX,gvt1.com
 DOMAIN-SUFFIX,gvt2.com
@@ -57,29 +44,23 @@ DOMAIN-SUFFIX,gvt3.com
 DOMAIN-SUFFIX,google-analytics.com
 DOMAIN-SUFFIX,googletagmanager.com
 
-# === GitHub 专项 (解决 PC 下载与图片加载) ===
+# === Google Voice 核心通话信令 ===
+DOMAIN-SUFFIX,voice.google.com
+DOMAIN-SUFFIX,telephony.goog
+
+# === GitHub 专项 (解决微软直连策略导致的断网) ===
 DOMAIN-SUFFIX,github.com
 DOMAIN-SUFFIX,github.io
 DOMAIN-SUFFIX,github.blog
 DOMAIN-SUFFIX,githubassets.com
 DOMAIN-SUFFIX,githubusercontent.com
-DOMAIN-SUFFIX,objects.githubusercontent.com
 DOMAIN-SUFFIX,pkg-containers.githubusercontent.com
 
-# === 关键词与 IP 兜底 ===
+# === 高效精准关键词匹配 (防误杀机制) ===
 DOMAIN-KEYWORD,gmail
-DOMAIN-KEYWORD,google
 DOMAIN-KEYWORD,github
-DOMAIN-SUFFIX,mori.teracloud.jp
+DOMAIN-KEYWORD,telephony
+
+# === 官方核心 IP 段与 STUN 信令 (防转圈兜底，带 no-resolve 防 DNS 泄露) ===
 IP-CIDR,173.194.0.0/16,no-resolve
 IP-CIDR,74.125.0.0/16,no-resolve
-
-# === Google Voice 核心分流规则 ===
-DOMAIN-SUFFIX,voice.google.com,us Google Voice
-DOMAIN-SUFFIX,telephony.goog,us Google Voice
-DOMAIN-KEYWORD,telephony,us Google Voice
-DOMAIN-KEYWORD,voice,us Google Voice
-
-# === 补充：语音通话 STUN/VoIP 底层信令与端口 ===
-DOMAIN-SUFFIX,googleapis-pa.googleapis.com,us Google Voice
-IP-CIDR,74.125.0.0/16,us Google Voice,no-resolve
