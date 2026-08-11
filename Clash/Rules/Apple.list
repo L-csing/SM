@@ -1,4 +1,4 @@
-# === 核心域名 & 商店 (App Store / TestFlight) ===
+# === 核心域名 & 商店 (App Store / TestFlight / iTunes) ===
 DOMAIN-SUFFIX,apple.com
 DOMAIN-SUFFIX,apple.cn
 DOMAIN-SUFFIX,appstore.com
@@ -9,20 +9,20 @@ DOMAIN-SUFFIX,itunes.com
 DOMAIN-SUFFIX,aaplimg.com
 DOMAIN-SUFFIX,cdn-apple.com
 
-# === iCloud & 推送 (全平台同步) ===
+# === iCloud & 实时推送 (全平台资料同步) ===
 DOMAIN-SUFFIX,icloud.com
 DOMAIN-SUFFIX,icloud.com.cn
 DOMAIN-SUFFIX,icloud-content.com
 DOMAIN-SUFFIX,me.com
 DOMAIN-SUFFIX,apple-cloudkit.com
 
-# === Apple TV+ 与流媒体 (tvOS 专项) ===
+# === Apple TV+ 与流媒体串流 (tvOS 专项加速) ===
 DOMAIN-SUFFIX,tv.apple.com
 DOMAIN-SUFFIX,hls.itunes.apple.com
 DOMAIN-SUFFIX,hls-amt.itunes.apple.com
 DOMAIN-SUFFIX,play-edge.itunes.apple.com
 
-# === 系统基础设施 (地图/更新/安全) ===
+# === 系统基础设施 (地图/时间同步/安全认证/崩溃日志) ===
 DOMAIN-SUFFIX,apple-dns.net
 DOMAIN-SUFFIX,apple-mapkit.com
 DOMAIN-SUFFIX,apple-support.akadns.net
@@ -30,7 +30,7 @@ DOMAIN-SUFFIX,ls.apple.com
 DOMAIN-SUFFIX,digicert.com
 DOMAIN-SUFFIX,crashlytics.com
 
-# === 官方 IP 段 (最稳的兜底) ===
+# === 官方核心 IP 段与全球 CDN 兜底 (带 no-resolve 极致性能) ===
 IP-CIDR,17.0.0.0/8,no-resolve
 IP-CIDR,139.178.128.0/18,no-resolve
 IP-CIDR,144.178.0.0/19,no-resolve
@@ -38,7 +38,7 @@ IP-CIDR,192.35.50.0/24,no-resolve
 IP-CIDR6,2403:300::/32,no-resolve
 IP-CIDR6,2620:149::/32,no-resolve
 
-# === User-Agent 系统识别 (iOS/Mac/tvOS) ===
+# === User-Agent 系统客户端深度识别 (iOS / Mac / tvOS 增强) ===
 USER-AGENT,AppStore*
 USER-AGENT,AppleTV*
 USER-AGENT,TestFlight*
