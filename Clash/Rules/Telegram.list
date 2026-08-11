@@ -1,4 +1,4 @@
-# === Telegram 核心域名 (解决全平台基础连接) ===
+# === Telegram 官方核心域名 (全平台基础通信) ===
 DOMAIN-SUFFIX,t.me
 DOMAIN-SUFFIX,tdesktop.com
 DOMAIN-SUFFIX,telegra.ph
@@ -11,46 +11,43 @@ DOMAIN-SUFFIX,tg.dev
 DOMAIN-SUFFIX,tx.me
 DOMAIN-SUFFIX,usercontent.dev
 
-# === 资源、图片与视频 CDN (解决加载慢/卡顿) ===
+# === 资源、图片与视频 CDN 加速 (解决大文件/视频加载慢) ===
 DOMAIN-SUFFIX,cdn-telegram.org
 DOMAIN-SUFFIX,telegram-cdn.org
 DOMAIN-SUFFIX,telegramdownload.com
 DOMAIN-SUFFIX,graph.org
 DOMAIN-SUFFIX,legra.ph
 
-# === Telegram 钱包、小程序与 TON 生态 (2026 必补) ===
+# === Web3、TON 生态、小程序与第三方辅助 ===
 DOMAIN-SUFFIX,wallet.tg
 DOMAIN-SUFFIX,walletbot.me
 DOMAIN-SUFFIX,fragment.com
 DOMAIN-SUFFIX,ton.org
 DOMAIN-SUFFIX,ton.sh
+DOMAIN-SUFFIX,tonkeeper.com
+DOMAIN-SUFFIX,nicegram.app
+DOMAIN-SUFFIX,combot.org
 
-# === 官方核心 DC IP 段 (防止转圈、固定 IP 显示的核心) ===
-# 覆盖全球所有数据中心 (DC1-DC5)
-IP-CIDR,91.108.4.0/22,no-resolve
-IP-CIDR,91.108.8.0/22,no-resolve
-IP-CIDR,91.108.12.0/22,no-resolve
-IP-CIDR,91.108.16.0/22,no-resolve
-IP-CIDR,91.108.20.0/22,no-resolve
-IP-CIDR,91.108.56.0/22,no-resolve
+# === 官方核心 DC IP 段 (100% 覆盖 DC1-DC5 全球数据中心) ===
+# 覆盖 DC4 (欧洲/阿姆斯特丹) 与 DC5 (新加坡) 核心网段
+IP-CIDR,91.108.0.0/16,no-resolve
+IP-CIDR,91.105.192.0/23,no-resolve
 IP-CIDR,149.154.160.0/20,no-resolve
 IP-CIDR,185.76.151.0/24,no-resolve
-IP-CIDR,91.105.192.0/23,no-resolve
 
-# === IPv6 核心段 (针对 iOS/Mac 系统底层加速) ===
+# === IPv6 核心段 (针对移动网络与双栈环境加速) ===
 IP-CIDR6,2001:67c:4e8::/48,no-resolve
 IP-CIDR6,2001:b28:f23c::/48,no-resolve
 IP-CIDR6,2001:b28:f23d::/48,no-resolve
 IP-CIDR6,2001:b28:f23f::/48,no-resolve
 IP-CIDR6,2a0a:f280::/32,no-resolve
 
-# === 自治系统号 (ASN) 终极覆盖 ===
+# === 自治系统号 (ASN) 终极兜底锁死 (重点防护 DC4/DC5 扩容) ===
 IP-ASN,44907,no-resolve
 IP-ASN,59930,no-resolve
 IP-ASN,62014,no-resolve
 IP-ASN,62041,no-resolve
 IP-ASN,211157,no-resolve
 
-# === 关键词与统计补丁 (适配 Nagram X) ===
+# === 关键词匹配 ===
 DOMAIN-KEYWORD,telegram
-DOMAIN,api.mixpanel.com
