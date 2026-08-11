@@ -18,28 +18,36 @@ DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,stripe.com
 
-# === Google Gemini & AI Studio (含补丁) ===
+# === Google Gemini & AI Studio ===
+# (注: usercontent 静态资源已交由 Google.list 统一处理，防止策略组抢流)
 DOMAIN,gemini.google.com
 DOMAIN,aistudio.google.com
 DOMAIN,ai.google.dev
 DOMAIN,generativelanguage.googleapis.com
-DOMAIN-SUFFIX,googleusercontent.com
 DOMAIN-KEYWORD,alkalimelt
 DOMAIN-KEYWORD,alkalimina-pa
 
-# === Anthropic (Claude) 核心 ===
+# === Anthropic (Claude) 核心与沙盒组件 ===
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claudeusercontent.com
 
-# === Manus AI (新一代 AI Agent) ===
+# === Microsoft Copilot (解决主配置中微软全局直连导致的封锁) ===
+DOMAIN-SUFFIX,copilot.microsoft.com
+
+# === Manus AI & 新一代 Agent (含 Vercel 托管) ===
 DOMAIN-SUFFIX,manus.im
 DOMAIN-SUFFIX,manus.ai
 DOMAIN-SUFFIX,vercel.app
 
-# === 其他主流 AI 与生产力辅助 ===
+# === 其他主流 AI (Cursor, Perplexity, Poe, Grok, Meta) ===
+DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,poe.com
-DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,meta.ai
 
 # === AI 视频演示补丁 (解决 Sora 等视频无法播放) ===
 DOMAIN-SUFFIX,vimeo.com
