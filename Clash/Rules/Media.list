@@ -5,6 +5,11 @@ DOMAIN-SUFFIX,ttvnw.net
 DOMAIN-SUFFIX,jtvnw.net
 DOMAIN-SUFFIX,ext-twitch.tv
 DOMAIN-SUFFIX,twitch-ext.rootonline.de
+DOMAIN-SUFFIX,sooplive.com
+DOMAIN-SUFFIX,sooplive.co.kr
+DOMAIN-SUFFIX,soop.io
+DOMAIN-SUFFIX,afreecatv.com
+DOMAIN-SUFFIX,afreeca.com
 
 # === (Music) Spotify, Apple Music & 全球音乐加速 ===
 DOMAIN-SUFFIX,pscdn.co
