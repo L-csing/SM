@@ -5,10 +5,14 @@ DOMAIN-SUFFIX,ttvnw.net
 DOMAIN-SUFFIX,jtvnw.net
 DOMAIN-SUFFIX,ext-twitch.tv
 DOMAIN-SUFFIX,twitch-ext.rootonline.de
+
+# === SOOP (AfrecaTV) 核心及 CDN 资源全覆盖 ===
 DOMAIN-SUFFIX,sooplive.com
 DOMAIN-SUFFIX,sooplive.co.kr
 DOMAIN-SUFFIX,soop.io
+DOMAIN-SUFFIX,soopcdn.com
 DOMAIN-SUFFIX,afreecatv.com
+DOMAIN-SUFFIX,afreecatv.co.kr
 DOMAIN-SUFFIX,afreeca.com
 
 # === (Music) Spotify, Apple Music & 全球音乐加速 ===
