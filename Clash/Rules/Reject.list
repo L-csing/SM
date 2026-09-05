@@ -92,3 +92,7 @@ DOMAIN,track.tenjin.io
 DOMAIN,safebrowsing.googleapis-cn.com
 DOMAIN,safebrowsing.googleapis.com
 DOMAIN,safebrowsing.urlsec.qq.com
+
+DOMAIN-SUFFIX,adl.netease.com
+DOMAIN-SUFFIX,gdl.netease.com
+DOMAIN-KEYWORD,splash
