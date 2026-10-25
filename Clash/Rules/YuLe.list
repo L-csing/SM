@@ -1,49 +1,49 @@
 # ---------- [0. 矩阵通用服务与配置] ----------
-HOST-SUFFIX,gdzhimou.com,direct
+host-suffix, gdzhimou.com, direct
 
 # ---------- [1. B 站 / 哔哩哔哩 (MVision)] ----------
-HOST-SUFFIX,bilibili.com,direct
-HOST-SUFFIX,hdslb.com,direct
-HOST-SUFFIX,bilivideo.com,direct
-HOST-SUFFIX,bilivideo.cn,direct
-HOST-SUFFIX,biliapi.net,direct
-HOST-SUFFIX,biliapi.com,direct
-HOST-SUFFIX,acg.tv,direct
-HOST-SUFFIX,acgvideo.com,direct
-HOST-SUFFIX,bilibili.tv,direct
-HOST-SUFFIX,biliimg.com,direct
-HOST-SUFFIX,b23.tv,direct
-HOST-SUFFIX,bsbsb.top,direct
+host-suffix, bilibili.com, direct
+host-suffix, hdslb.com, direct
+host-suffix, bilivideo.com, direct
+host-suffix, bilivideo.cn, direct
+host-suffix, biliapi.net, direct
+host-suffix, biliapi.com, direct
+host-suffix, acg.tv, direct
+host-suffix, acgvideo.com, direct
+host-suffix, bilibili.tv, direct
+host-suffix, biliimg.com, direct
+host-suffix, b23.tv, direct
+host-suffix, bsbsb.top, direct
 
 # ---------- [2. 抖音 / 字节跳动 (MFlow)] ----------
-HOST,lf3-static.bytednsdoc.com,direct
-HOST,v5-dy-o-abtest.zjcdn.com,direct
-HOST-SUFFIX,douyin.com,direct
-HOST-SUFFIX,douyinvod.com,direct
-HOST-SUFFIX,idouyinvod.com,direct
-HOST-SUFFIX,douyinpic.com,direct
-HOST-SUFFIX,douyincdn.com,direct
-HOST-SUFFIX,douyinstatic.com,direct
-HOST-SUFFIX,amemv.com,direct
-HOST-SUFFIX,iesdouyin.com,direct
-HOST-SUFFIX,snssdk.com,direct
-HOST-SUFFIX,byteimg.com,direct
-HOST-SUFFIX,bytevod.com,direct
-HOST-SUFFIX,bytetos.com,direct
-HOST-SUFFIX,bytedance.com,direct
-HOST-SUFFIX,zijieapi.com,direct
-HOST-SUFFIX,pstatp.com,direct
-HOST-SUFFIX,toutiao.com,direct
-HOST-SUFFIX,ixigua.com,direct
-HOST-SUFFIX,ixiguavideo.com,direct
+host, lf3-static.bytednsdoc.com, direct
+host, v5-dy-o-abtest.zjcdn.com, direct
+host-suffix, douyin.com, direct
+host-suffix, douyinvod.com, direct
+host-suffix, idouyinvod.com, direct
+host-suffix, douyinpic.com, direct
+host-suffix, douyincdn.com, direct
+host-suffix, douyinstatic.com, direct
+host-suffix, amemv.com, direct
+host-suffix, iesdouyin.com, direct
+host-suffix, snssdk.com, direct
+host-suffix, byteimg.com, direct
+host-suffix, bytevod.com, direct
+host-suffix, bytetos.com, direct
+host-suffix, bytedance.com, direct
+host-suffix, zijieapi.com, direct
+host-suffix, pstatp.com, direct
+host-suffix, toutiao.com, direct
+host-suffix, ixigua.com, direct
+host-suffix, ixiguavideo.com, direct
 
 # ---------- [3. 网易云音乐 (MMuse)] ----------
-HOST-SUFFIX,music.163.com,direct
-HOST-SUFFIX,163.com,direct
-HOST-SUFFIX,126.net,direct
-HOST-SUFFIX,netease.com,direct
-HOST-SUFFIX,ydstatic.com,direct
+host-suffix, music.163.com, direct
+host-suffix, 163.com, direct
+host-suffix, 126.net, direct
+host-suffix, netease.com, direct
+host-suffix, ydstatic.com, direct
 
 # ---------- [4. 果果短剧 (MGuo)] ----------
-HOST-SUFFIX,hongguoduanju.com,direct
-HOST-SUFFIX,fqnovel.com,direct
+host-suffix, hongguoduanju.com, direct
+host-suffix, fqnovel.com, direct
